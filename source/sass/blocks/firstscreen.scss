@@ -1,0 +1,15 @@
+.firstscreen {
+  background-image: $gradient-bg;
+}
+
+@media (max-width: ($vp-1024 - 1px)) {
+  .firstscreen {
+    background-image: $gradient-bg-tablet;
+  }
+}
+
+@media (max-width: ($vp-768 - 1px)) {
+  .firstscreen {
+    background-image: $gradient-bg-mobile;
+  }
+}

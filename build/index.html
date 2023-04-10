@@ -45,13 +45,25 @@
         </div>
       </div>
       <main>
-        <section class="intro">
-          <div class="container">
-            <h1>Тестовая страница.</h1>
-            <p>На данной странице показан пример модальных окон.</p>
-            <p>Перед началом разработки не забудьте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.</p>
-            <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
-            <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
+
+        <!-- Описание (Тренажерный зал) -->
+        <section class="description">
+          <div class="container description__container">
+            <picture>
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/gym-tablet.webp 1x, img/gym-tablet@2x.webp 2x">
+              <source media="(min-width: 768px)" srcset="img/gym-tablet.jpg 1x, img/gym-tablet@2x.jpg 2x">
+              <source type="image/webp" srcset="img/gym.webp 1x, img/gym@2x.webp 2x">
+              <img class="description__img" src="img/gym.jpg" srcset="img/gym@2x.jpg 2x" width="660" height="400" alt="Фото тренажерного зала." loading="lazy">
+            </picture>
+            <video class="description__video" width="364" height="228" controls="controls" preload="none" poster="img/gym-video.jpg" src="https://www.youtube.com/watch?v=9TZXsZItgdw">
+              <a class="description__button" href="https://www.youtube.com/watch?v=9TZXsZItgdw"></a>
+            </video>
+            <div class="description__text">
+              <h2>Тренажерный зал</h2>
+              <h3>Просторный зал площадью 900 кв/м</h3>
+              <p>Supergym&nbsp;&mdash; самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место для укрепления тела и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
+              <p>В&nbsp;зале расположены отдельная зона для Crossfit и&nbsp;кардио-зона с&nbsp;40&nbsp;тренажерами. Также в&nbsp;фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
+            </div>
           </div>
         </section>
       </main>

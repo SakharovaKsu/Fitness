@@ -7,12 +7,30 @@
   justify-content: space-between;
 }
 
+.header__logo {
+  @include hover-focus {
+    opacity: 0.6;
+  }
+
+  @include active {
+    opacity: 0.3;
+  }
+}
+
 .header__container a {
   font-family: $ff-alumni-sans;
   color: $color-default-white;
   font-size: 26px;
   line-height: 31px;
   letter-spacing: 0.03em;
+
+  @include hover-focus {
+    color: $color-midnight-express;
+  }
+
+  @include active {
+    opacity: 0.6;
+  }
 }
 
 @media (max-width: ($vp-1024 - 1px)) {

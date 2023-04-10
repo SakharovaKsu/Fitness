@@ -5,9 +5,9 @@
 
 .main-screen__container {
   display: flex;
-  column-gap: 65px;
+  column-gap: 130px;
   flex-direction: row-reverse;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .main-screen__box {
@@ -76,6 +76,23 @@
   border: 4px solid $color-default-white;
   background-color: transparent;
   padding: 19px 55px;
+
+  @include hover-focus {
+    background-color: $color-default-white;
+    color: $color-egyptian-blue;
+  }
+
+  @include active {
+    background-color: $color-default-white;
+    color: $color-crimson;
+  }
+}
+
+@media (max-width: ($vp-1440 - 1px)) {
+  .main-screen__container{
+    justify-content: flex-end;
+    column-gap: 65px;
+  }
 }
 
 @media (max-width: ($vp-1024 - 1px)) {
