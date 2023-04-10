@@ -1,0 +1,16 @@
+.header {
+  padding-top: 30px;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__container a {
+  font-family: $ff-alumni-sans;
+  color: $color-default-white;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+}

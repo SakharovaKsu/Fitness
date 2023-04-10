@@ -1,20 +1,49 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Описание проекта">
     <title>Fitness</title>
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <div class="wrapper">
-      <header class="header">
-        <div class="container">
-          
+      <div class="firstscreen">
+        <header class="header">
+          <div class="container header__container">
+            <a href="index.html">
+              <svg width="122" height="44" role="img" aria-hidden="true" focusable="false">
+                <use href="img/sprite.svg#logo"></use>
+              </svg>
+            </a>
+            <a href="tel:88005555555">8-800-555-55-55</a>
+          </div>
+        </header>
+
+        <!-- Первый экран -->
+        <div class="main-screen">
+          <div class="container main-screen__container">
+            <picture>
+              <source type="image/webp" srcset="img/photo-men.webp 1x, img/photo-men@2x.webp 2x">
+              <img src="img/photo-men.jpg" srcset="img/photo-men@2x.jpg 2x" width="500" height="556" alt="На фото мужчина в тени, который смотрит в сторону света." loading="lazy">
+            </picture>
+            <div class="main-screen__box">
+              <span>омск</span>
+              <div class="main-screen__text">
+                <h1>Фитнес центр</h1>
+                <ul class="main-screen__list">
+                  <li>Тренажёрный зал</li>
+                  <li>Групповые занятия</li>
+                  <li>Кардио-зона</li>
+                </ul>
+              </div>
+              <button class="main-screen__button">Купить абонемент</button>
+            </div>
+          </div>
         </div>
-      </header>
+      </div>
       <main>
         <section class="intro">
           <div class="container">
@@ -59,6 +88,14 @@
         </div>
       </div>
     </div>
+
+    <script>
+      window.pixelperfect = {
+        breakpoints: [320, 768, 1366],
+        folder: 'img/pixelperfect'
+      };
+    </script>
+    <script src="https://efiand.github.io/pixelperfect/pixelperfect.min.js"></script>
 
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>

@@ -9,8 +9,9 @@
   }
 
   @include vp-1439 {
-    max-width: 900px;
+    max-width: 1160px;
     margin: 0 auto;
+    padding: 0;
   }
 
   @include vp-1023 {
