@@ -1,6 +1,26 @@
-@mixin retina {
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+@mixin media-retina {
+  @media (min-resolution: 2dppx) {
     @content;
+  }
+}
+
+@mixin graphic-webp($filename, $extname: "jpg") {
+  $webp: url("../img/#{$filename}.webp");
+
+  @supports (background-image: $webp) {
+    background-image: $webp;
+  }
+
+  @supports not (background-image: $webp) {
+    background-image: url("../img/#{$filename}.#{$extname}");
+  }
+}
+
+@mixin graphic-retina($filename, $extname: "jpg") {
+  @include graphic-webp($filename, $extname);
+
+  @include media-retina {
+    @include graphic-webp("#{$filename}@2x", $extname);
   }
 }
 
@@ -18,13 +38,7 @@
   }
 }
 
-@mixin active {
-  &.focus-visible:active {
-    @content;
-  }
-}
-
-@mixin hover-focus {
+@mixin hover-focus-visible {
   @media (hover: hover) {
     &:hover:not(.focus-visible) {
       @content;
@@ -32,6 +46,22 @@
   }
 
   &.focus-visible:focus {
+    @content;
+  }
+}
+
+@mixin hover-focus {
+  &:hover {
+    @content;
+  }
+
+  @include focus {
+    @content;
+  }
+}
+
+@mixin active {
+  &:active {
     @content;
   }
 }
@@ -73,46 +103,3 @@
     @content;
   }
 }
-
-// Mobile first
-
-// @mixin vp-375 {
-//   @media (min-width: $vp-375) {
-//     @content;
-//   }
-// }
-
-// @mixin vp-768 {
-//   @media (min-width: $vp-768) {
-//     @content;
-//   }
-// }
-
-// @mixin vp-1024 {
-//   @media (min-width: $vp-1024) {
-//     @content;
-//   }
-// }
-
-// @mixin vp-1280 {
-//   @media (min-width: $vp-1280) {
-//     @content;
-//   }
-// }
-
-// @mixin vp-1440 {
-//   @media (min-width: $vp-1440) {
-//     @content;
-//   }
-// }
-
-// @mixin vp-1920 {
-//   @media (min-width: $vp-1920) {
-//     @content;
-//   }
-// }
-
-// ---------------------------------
-
-// не нужно добавлять свои миксины для ресета списков, обнуления кнопок и прочие
-// этим вы усложняете работу команды, проверку вашего кода и будущую поддержку проекта
