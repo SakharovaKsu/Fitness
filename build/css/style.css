@@ -1491,8 +1491,27 @@ button,
 
 .description__video {
   position: absolute;
-  bottom: 120px;
-  right: 530px;
+  top: 408px;
+  left: 39.5%;
+  width: 364px;
+  height: 228px;
+  z-index: 1;
+}
+
+.description__video-play {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+  cursor: pointer;
+  z-index: 3;
 }
 
 .description__text {
@@ -1987,7 +2006,14 @@ button,
   }
 
   .description__video {
-    right: 462px;
+    position: relative;
+    width: 266px;
+    height: 167px;
+    top: -84px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
   }
 
   .description__text {
@@ -2085,28 +2111,37 @@ button,
     -webkit-box-direction: reverse;
     -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
   }
 
   .description__img {
     width: 678px;
     height: 345px;
+    margin: auto;
   }
 
   .description__video {
     width: 266px;
     height: 167px;
-    right: 0;
-    left: 0;
-    margin: auto;
-    bottom: 101px;
+    top: -84px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+
+  .description__video-image {
+    width: 100%;
+    height: 100%;
+    -o-object-position: 0 50%;
+    object-position: 0 50%;
+    -o-object-fit: cover;
+    object-fit: cover;
   }
 
   .description__text {
     padding-left: 0;
     max-width: 502px;
+    margin: auto;
   }
 
   .description__text p:last-child {
@@ -2327,8 +2362,8 @@ button,
   }
 
   .description {
-    padding-top: 25px;
-    padding-bottom: 56px;
+    padding-top: 64px;
+    padding-bottom: 72px;
   }
 
   .description h2 {
@@ -2363,13 +2398,17 @@ button,
   }
 
   .description__video {
-    position: static;
+    top: 0;
+  }
+
+  .description__video,
+  .description__video-image {
     width: 100vw;
     height: auto;
   }
 
   .tab {
-    padding-top: 63px;
+    padding-top: 61px;
     padding-bottom: 70px;
   }
 
