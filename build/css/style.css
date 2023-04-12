@@ -1546,23 +1546,23 @@ button,
 .tab::before {
   content: "";
   position: absolute;
-  bottom: -36px;
-  right: -32px;
-  width: 321px;
-  height: 384px;
+  bottom: -73px;
+  right: -100px;
+  width: 389px;
+  height: 420px;
   z-index: 0;
-  background-size: 290px auto;
+  background-size: 288px auto;
 }
 
-@supports (background-image: url("../img/background-picture.webp")) {
+@supports (background-image: url("../img/background-picture-desktop.webp")) {
   .tab::before {
-    background-image: url("../img/background-picture.webp");
+    background-image: url("../img/background-picture-desktop.webp");
   }
 }
 
-@supports not (background-image: url("../img/background-picture.webp")) {
+@supports not (background-image: url("../img/background-picture-desktop.webp")) {
   .tab::before {
-    background-image: url("../img/background-picture.jpg");
+    background-image: url("../img/background-picture-desktop.jpg");
   }
 }
 
@@ -1773,6 +1773,136 @@ button,
   width: 206px;
 }
 
+.event {
+  padding-top: 120px;
+  padding-bottom: 106px;
+}
+
+.event__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background-color: #ff1553;
+}
+
+.event__inner {
+  display: -ms-grid;
+  display: grid;
+  grid-template-areas: "title text" "title about" "description description" "btn btn";
+  padding: 81px 79px;
+  color: #ffffff;
+}
+
+.event__inner h2 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-size: 82px;
+  line-height: 96%;
+  max-width: 200px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin: 0;
+  grid-area: title;
+  margin-left: 12px;
+  margin-bottom: 31px;
+  margin-right: 40px;
+  margin-top: 3px;
+}
+
+.event__inner p {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  font-size: 18px;
+  margin: 0;
+  grid-area: description;
+  padding-bottom: 46px;
+}
+
+.event__box-one {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: text;
+}
+
+.event__box-one p {
+  padding-bottom: 6px;
+  border-bottom: 1px solid #ffffff;
+  max-width: 64px;
+}
+
+.event__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  padding-top: 5px;
+}
+
+.event__text p {
+  font-weight: 700;
+  font-size: 40px;
+  border-bottom: none;
+  padding-right: 6px;
+  max-width: 88px;
+}
+
+.event__text span {
+  display: inline-block;
+  max-width: 40px;
+  font-size: 14px;
+  line-height: 1.3em;
+}
+
+.event__box-two {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: about;
+  margin-top: -8px;
+}
+
+.event__box-two p {
+  border-bottom: 1px solid #ffffff;
+  padding-bottom: 6px;
+  max-width: 88px;
+}
+
+.event__box-two span {
+  display: block;
+  font-weight: 700;
+  font-size: 40px;
+  padding-top: 12px;
+}
+
+.event__button {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  grid-area: btn;
+  border: 4px solid #ffffff;
+  padding: 25px;
+  width: 100%;
+}
+
+.event__img {
+  width: 100%;
+  height: auto;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -1964,7 +2094,9 @@ button,
   .description__video {
     width: 266px;
     height: 167px;
-    right: 250px;
+    right: 0;
+    left: 0;
+    margin: auto;
     bottom: 101px;
   }
 
@@ -2009,6 +2141,18 @@ button,
     background-size: 348px auto;
   }
 
+@supports (background-image: url("../img/background-picture-tablet.webp")) {
+    .tab::before {
+      background-image: url("../img/background-picture-tablet.webp");
+    }
+}
+
+@supports not (background-image: url("../img/background-picture-tablet.webp")) {
+    .tab::before {
+      background-image: url("../img/background-picture-tablet.jpg");
+    }
+}
+
   .tab__container h2 {
     font-size: 42px;
     line-height: 50px;
@@ -2050,6 +2194,49 @@ button,
   .tab__list--close {
     display: none;
   }
+
+  .event {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .event__inner h2 {
+    font-size: 48px;
+  }
+
+  .event__inner p,
+  .event__box-one p,
+  .event__box-two p {
+    font-size: 12p x;
+  }
+
+  .event__text p,
+  .event__box-two span {
+    font-size: 24px;
+  }
+
+  .event__text span,
+  .event__button {
+    font-size: 10px;
+  }
+
+  .event__button {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1023px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 1023px) and (min-resolution: 2dppx) {
+@supports (background-image: url("../img/background-picture-tablet@2x.webp")) {
+    .tab::before {
+      background-image: url("../img/background-picture-tablet@2x.webp");
+    }
+}
+
+@supports not (background-image: url("../img/background-picture-tablet@2x.webp")) {
+    .tab::before {
+      background-image: url("../img/background-picture-tablet@2x.jpg");
+    }
+}
 }
 
 @media (max-width: 767px) {
@@ -2133,8 +2320,7 @@ button,
 
   .description {
     padding-top: 25px;
-    padding-bottom: 237px;
-    margin-bottom: 40px;
+    padding-bottom: 56px;
   }
 
   .description h2 {
@@ -2164,13 +2350,13 @@ button,
   .description__img {
     width: 100vw;
     height: 313px;
+    margin-bottom: 40px;
   }
 
   .description__video {
-    right: 0;
-    bottom: 0;
-    width: 320px;
-    height: 167px;
+    position: static;
+    width: 100vw;
+    height: auto;
   }
 
   .tab {
@@ -2311,15 +2497,15 @@ button,
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 2dppx) {
-@supports (background-image: url("../img/background-picture@2x.webp")) {
+@supports (background-image: url("../img/background-picture-desktop@2x.webp")) {
     .tab::before {
-      background-image: url("../img/background-picture@2x.webp");
+      background-image: url("../img/background-picture-desktop@2x.webp");
     }
 }
 
-@supports not (background-image: url("../img/background-picture@2x.webp")) {
+@supports not (background-image: url("../img/background-picture-desktop@2x.webp")) {
     .tab::before {
-      background-image: url("../img/background-picture@2x.jpg");
+      background-image: url("../img/background-picture-desktop@2x.jpg");
     }
 }
 }

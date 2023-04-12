@@ -7,14 +7,14 @@
   &::before {
     content: "";
     position: absolute;
-    bottom: -36px;
-    right: -32px;
-    width: 321px;
-    height: 384px;
+    bottom: -73px;
+    right: -100px;
+    width: 389px;
+    height: 420px;
     z-index: 0;
-    background-size: 290px auto;
+    background-size: 288px auto;
 
-    @include graphic-retina("background-picture");
+    @include graphic-retina("background-picture-desktop");
   }
 }
 
@@ -206,6 +206,8 @@
       right: -8px;
       width: 354px;
       background-size: 348px auto;
+
+      @include graphic-retina("background-picture-tablet");
     }
   }
 

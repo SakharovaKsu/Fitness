@@ -1,0 +1,142 @@
+.promo {
+  padding-top: 120px;
+  padding-bottom: 106px;
+}
+
+.promo__container {
+  display: flex;
+  justify-content: space-between;
+  background-color: $color-torch-red;
+}
+
+.promo__inner {
+  display: grid;
+  grid-template-areas:
+                        "title text"
+                        "title about"
+                        "description description"
+                        "btn btn";
+  padding: 81px 79px;
+  color: $color-default-white;
+}
+
+.promo__inner h2 {
+  font-family: $ff-alumni-sans;
+  font-size: 82px;
+  line-height: 96%;
+  max-width: 200px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin: 0;
+  grid-area: title;
+  margin-left: 12px;
+  margin-bottom: 31px;
+  margin-right: 40px;
+  margin-top: 3px;
+}
+
+.promo__inner p {
+  font-size: 18px;
+  margin: 0;
+  grid-area: description;
+  padding-bottom: 46px;
+}
+
+.promo__box-one {
+  grid-area: text;
+}
+
+.promo__box-one p {
+  padding-bottom: 6px;
+  border-bottom: 1px solid $color-default-white;
+  max-width: 64px;
+}
+
+.promo__text {
+  display: flex;
+  align-items: flex-end;
+  padding-top: 5px;
+}
+
+.promo__text p {
+  font-weight: 700;
+  font-size: 40px;
+  border-bottom: none;
+  padding-right: 6px;
+  max-width: 88px;
+}
+
+.promo__text span {
+  display: inline-block;
+  max-width: 40px;
+  font-size: 14px;
+  line-height: 1.3em;
+}
+
+.promo__box-two {
+  grid-area: about;
+  margin-top: -8px;
+}
+
+.promo__box-two p {
+  border-bottom: 1px solid $color-default-white;
+  padding-bottom: 6px;
+  max-width: 88px;
+}
+
+.promo__box-two span {
+  display: block;
+  font-weight: 700;
+  font-size: 40px;
+  padding-top: 12px;
+}
+
+.promo__button {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-align: center;
+  color: $color-default-white;
+  grid-area: btn;
+  border: 4px solid $color-default-white;
+  padding: 25px;
+  width: 100%;
+}
+
+.promo__img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: ($vp-1024 - 1px)) {
+  .promo {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .promo__inner h2 {
+    font-size: 48px;
+  }
+
+  .promo__inner p,
+  .promo__box-one p,
+  .promo__box-two p {
+    font-size: 12p x;
+  }
+
+  .promo__text p,
+  .promo__box-two span {
+    font-size: 24px;
+  }
+
+  .promo__text span,
+  .promo__button {
+    font-size: 10px;
+  }
+
+  .promo__button {
+    padding: 16px;
+  }
+}
