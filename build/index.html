@@ -49,9 +49,12 @@
         <!-- Описание (Тренажерный зал) -->
         <section class="description">
           <div class="container description__container">
-            <video class="description__video" width="364" height="228" controls="controls" preload="none" poster="img/gym-video.jpg" src="https://www.youtube.com/watch?v=9TZXsZItgdw">
+            <!-- <video class="description__video" width="364" height="228" controls="controls" preload="none" poster="img/gym-video.jpg" src="https://www.youtube.com/watch?v=9TZXsZItgdw">
               <source href="https://www.youtube.com/watch?v=9TZXsZItgdw">
-            </video>
+            </video> -->
+            <div class="description__video">
+              <!-- <iframe width="364" height="228" src="https://www.youtube.com/embed/9TZXsZItgdw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+            </div>
             <picture>
               <source type="image/webp" media="(min-width: 320px)" srcset="img/gym-mobile.webp 1x, img/gym-mobile@2x.webp 2x">
               <source media="(min-width: 320px)" srcset="img/gym-mobile.jpg 1x, img/gym-mobile@2x.jpg 2x">
@@ -75,12 +78,12 @@
           <div class="container tab__container">
             <h2>Абонементы</h2>
             <div class="tab__box">
-              <button class="tab__button tab__button--active">1 месяц</button>
-              <button class="tab__button">6 месяцев</button>
-              <button class="tab__button">12 месяцев</button>
+              <button class="tab__button tab__button--active" type="button" data-tab-button id="1_month">1 месяц</button>
+              <button class="tab__button" type="button" data-tab-button id="6_months">6 месяцев</button>
+              <button class="tab__button" type="button" data-tab-button id="12_months">12 месяцев</button>
             </div>
             <div class="tab__content">
-              <ul class="tab__list">
+              <ul class="tab__list" aria-label="1_month" data-tab-content>
                 <li class="tab__item" tabindex="1">
                   <h3>С тренером</h3>
                   <p>12 занятий</p>
@@ -100,7 +103,7 @@
                   <a class="tab__link" href="#">купить абонемент</a>
                 </li>
               </ul>
-              <ul class="tab__list tab__list--close">
+              <ul class="tab__list tab__list--close" aria-label="6_months" data-tab-content hidden>
                 <li class="tab__item" tabindex="1">
                   <h3>С тренером</h3>
                   <p>36 занятий</p>
@@ -120,7 +123,7 @@
                   <a class="tab__link" href="#">купить абонемент</a>
                 </li>
               </ul>
-              <ul class="tab__list tab__list--close">
+              <ul class="tab__list tab__list--close" aria-label="12_months" data-tab-content hidden>
                 <li class="tab__item" tabindex="1">
                   <h3>Утренний</h3>
                   <p>безлемит</p>

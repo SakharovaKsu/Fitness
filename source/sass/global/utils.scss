@@ -61,3 +61,7 @@
 .js-focus-visible :focus:not(.focus-visible) {
   outline: none;
 }
+
+[hidden] {
+  display: none;
+}
