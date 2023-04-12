@@ -7,12 +7,10 @@ export const initTabs = (e) => {
   });
 
   tabsBtn.forEach = ((tab) => {
-    tab.setAttribute('aria-selected', false);
     tab.classList.remove('tab__button--active');
-
-    e.currentTarget.setAttribute('aria-selected', true);
-    e.currentTarget.classList.add('tab__button--active');
   });
+
+  e.currentTarget.classList.add('tab__button--active');
 
   const id = e.currentTarget.id;
   const activeTab = tabs.querySelector(`[aria-label="${id}"`);

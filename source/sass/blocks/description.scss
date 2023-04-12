@@ -21,15 +21,15 @@
   bottom: 120px;
   right: 530px;
 
-  &::after {
-    content: "";
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    top: 27%;
-    left: 36%;
-    background-image: url("../img/svg/icon-play.svg");
-  }
+  // &::after {
+  //   content: "";
+  //   position: absolute;
+  //   width: 100px;
+  //   height: 100px;
+  //   top: 27%;
+  //   left: 36%;
+  //   background-image: url("../img/svg/icon-play.svg");
+  // }
 }
 
 .description__text {
@@ -149,7 +149,8 @@
   }
 
   .description__text {
-    max-width: 290px;
+    padding: 0 15px;
+    max-width: 100%;
   }
 
   .description__text h3 {
@@ -168,7 +169,7 @@
 
   .description__img {
     width: 100vw;
-    height: 313px;
+    height: auto;
     margin-bottom: 40px;
   }
 
