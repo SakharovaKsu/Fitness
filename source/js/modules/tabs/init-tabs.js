@@ -1,5 +1,6 @@
 const tabs = document.querySelector('.tab');
-const tabsBtn = document.querySelectorAll('[data-tab-button]'); const tabsContent = document.querySelectorAll('[data-tab-content]');
+const tabsBtn = document.querySelectorAll('[data-tab-button]');
+const tabsContent = document.querySelectorAll('[data-tab-content]');
 
 export const initTabs = (e) => {
   tabsContent.forEach((container) => {

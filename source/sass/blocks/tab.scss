@@ -8,13 +8,11 @@
     content: "";
     position: absolute;
     bottom: -73px;
-    right: -100px;
-    width: 389px;
+    right: 0;
+    width: 288px;
     height: 420px;
     z-index: 0;
     background-size: 288px auto;
-
-    @include graphic-retina("background-picture-desktop");
   }
 }
 
@@ -127,7 +125,7 @@
   margin: 0;
   text-align: center;
   list-style-type: none;
-  padding: 58px 77px 68px;
+  padding: 58px 77px 69px;
   background-color: $color-default-white;
 
   @include hover-focus {
@@ -203,12 +201,19 @@
   width: 206px;
 }
 
+@media (min-width: 1024px) {
+  .tab::before {
+    @include graphic-retina("background-picture-desktop");
+  }
+}
+
 @media (max-width: ($vp-1024 - 1px)) {
   .tab {
     padding-top: 100px;
+    padding-bottom: 98px;
 
     &::before {
-      bottom: -42px;
+      bottom: -100px;
       right: -8px;
       width: 354px;
       background-size: 348px auto;
@@ -236,14 +241,6 @@
 
   .tab__item {
     min-width: 442px;
-  }
-
-  .tab__item span {
-    padding-left: 61px;
-
-    &::before {
-      left: 42px;
-    }
   }
 
   .tab__item a {

@@ -12,6 +12,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
+
   // initTabs();
   // Modules
   // ---------------------------------
