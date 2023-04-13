@@ -11,7 +11,7 @@ const getSlider = () => {
     });
 
     // eslint-disable-next-line no-unused-vars,no-undef
-    const swiper = new Swiper('.trainers-page__swiper', {
+    const swiper = new Swiper('swiper', {
       direction: 'horizontal',
       loop: true,
       slidesPerView: 4,
