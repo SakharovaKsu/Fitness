@@ -2,6 +2,10 @@
   padding-bottom: 90px;
 }
 
+.trainers-page__container {
+  position: relative;
+}
+
 .trainers-page__container h2 {
   font-family: $ff-alumni-sans;
   font-size: 54px;
@@ -133,3 +137,43 @@
   margin: 0;
   color: $color-spindle;
 }
+
+.trainers-page__button {
+  position: absolute;
+  display: block;
+  top: 243px;
+  width: 18px;
+  height: 34px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../img/svg/arrov.svg");
+  border: 0;
+  transition: opacity .3s ease;
+  background-color: transparent;
+  cursor: pointer;
+
+  // &::after {
+  //   position: absolute;
+  //   content: "";
+  //   top: -5px;
+  //   width: 44px;
+  //   height: 44px;
+  //   background-color: transparent;
+  // }
+}
+
+.trainers-page__button--prev {
+  left: -60px;
+}
+
+.trainers-page__button--next {
+  right: -60px;
+  transform: rotate(180deg);
+}
+
+// @media (max-width: ($vp-1024 - 1px)) {
+//   .trainers-page__item {
+
+//   }
+// }

@@ -1904,6 +1904,10 @@ button,
   padding-bottom: 90px;
 }
 
+.trainers-page__container {
+  position: relative;
+}
+
 .trainers-page__container h2 {
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-size: 54px;
@@ -2057,6 +2061,35 @@ button,
   font-weight: 400;
   margin: 0;
   color: #b6bdcc;
+}
+
+.trainers-page__button {
+  position: absolute;
+  display: block;
+  top: 243px;
+  width: 18px;
+  height: 34px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../img/svg/arrov.svg");
+  border: 0;
+  -webkit-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.trainers-page__button--prev {
+  left: -60px;
+}
+
+.trainers-page__button--next {
+  right: -60px;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 /* @mixin hover-focus {
