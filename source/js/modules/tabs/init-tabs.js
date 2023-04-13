@@ -4,19 +4,19 @@ const tabsContent = document.querySelectorAll('[data-tab-content]');
 
 export const initTabs = (e) => {
   tabsContent.forEach((container) => {
-    container.classList.add('tab__list--close');
+    container.classList.add('is-hidden');
   });
 
   tabsBtn.forEach = ((tab) => {
-    tab.classList.remove('tab__button--active');
+    tab.classList.remove('is-active');
   });
 
-  e.currentTarget.classList.add('tab__button--active');
+  e.currentTarget.classList.add('is-active');
 
   const id = e.currentTarget.id;
   const activeTab = tabs.querySelector(`[aria-label="${id}"`);
 
-  activeTab.classList.remove('tab__list--close');
+  activeTab.classList.remove('is-hidden');
 };
 
 tabsBtn.forEach((button) => button.addEventListener('click', initTabs));

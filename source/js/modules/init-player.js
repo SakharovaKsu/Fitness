@@ -17,7 +17,7 @@ export const initPlayer = () => {
   controlElement.innerHTML = linkElement.innerHTML;
   containerElement.replaceChild(controlElement, linkElement);
 
-  loadScript('https://www.youtube.com/watch?v=9TZXsZItgdw', () => {
+  loadScript('https://www.youtube.com/player_api', () => {
     window.onYouTubePlayerAPIReady = () => {
       const youtubePlayer = new window.YT.Player(youtubeElement.id, {
         events: {

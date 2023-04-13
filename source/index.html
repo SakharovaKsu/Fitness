@@ -54,8 +54,8 @@
         <section class="description">
           <div class="container container--mobile description__container">
             <div class="description__video video" data-video>
-              <div class="video__player" id="watch?v=9TZXsZItgdw" data-youtube></div>
-              <a class="video__control" href="https://www.youtube.com/watch?v=9TZXsZItgdw" data-control>
+              <div class="video__player" id="9TZXsZItgdw" data-youtube></div>
+              <a class="video__control" href="https://www.youtube.com/embed/9TZXsZItgdw" data-control>
                 <span class="visually-hidden">Проиграть видео</span>
               </a>
             </div>
@@ -82,9 +82,9 @@
           <div class="container tab__container">
             <h2>Абонементы</h2>
             <div class="tab__box">
-              <ul class="tab__controls">
+              <ul class="tab__controls tab__controls--nojs">
                 <li>
-                  <button class="tab__button tab__button--active" type="button" data-tab-button id="1_month">1 месяц</button>
+                  <button class="tab__button is-active" type="button" data-tab-button id="1_month">1 месяц</button>
                 </li>
                 <li>
                   <button class="tab__button" type="button" data-tab-button id="6_months">6 месяцев</button>
@@ -94,7 +94,9 @@
                 </li>
               </ul>
             </div>
-            <div class="tab__content">
+            <div class="tab__content tab__content--nojs">
+
+              <!-- 1 месяц -->
               <ul class="tab__list" aria-label="1_month" data-tab-content>
                 <li class="tab__item" tabindex="1">
                   <h3>С тренером</h3>
@@ -121,7 +123,9 @@
                   <a class="tab__link" href="#">купить абонемент</a>
                 </li>
               </ul>
-              <ul class="tab__list tab__list--close" aria-label="6_months" data-tab-content>
+
+              <!-- 6 месяц -->
+              <ul class="tab__list is-hidden" aria-label="6_months" data-tab-content>
                 <li class="tab__item" tabindex="1">
                   <h3>С тренером</h3>
                   <p>36 занятий</p>
@@ -147,7 +151,9 @@
                   <a class="tab__link" href="#">купить абонемент</a>
                 </li>
               </ul>
-              <ul class="tab__list tab__list--close" aria-label="12_months" data-tab-content>
+
+              <!-- 12 месяц -->
+              <ul class="tab__list is-hidden" aria-label="12_months" data-tab-content>
                 <li class="tab__item" tabindex="1">
                   <h3>Утренний</h3>
                   <p>безлемит</p>

@@ -80,7 +80,7 @@
   }
 }
 
-.tab__button--active {
+.tab__button.is-active {
   position: relative;
   color: $color-sapphire;
 
@@ -117,7 +117,7 @@
   border-bottom: 2px solid $color-grey-transparent;
 }
 
-.tab__list--close {
+.tab__list.is-hidden {
   display: none;
 }
 
