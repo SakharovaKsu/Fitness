@@ -53,6 +53,15 @@
         <!-- Описание (Тренажерный зал) -->
         <section class="description">
           <div class="container container--mobile description__container">
+            <!-- <div class="description__video">
+              <div class="video" data-video>
+                <iframe class="video__player" id="9TZXsZItgdw" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" title="Бесплатные интерактивные онлайн-курсы" width="640" height="360" src="https://www.youtube.com/embed/9TZXsZItgdw?enablejsapi=1&amp;origin=https%3A%2F%2Fefiand.github.io&amp;widgetid=1"></iframe>
+                <a class="video__control" href="https://youtube.com/embed/9TZXsZItgdw" data-control="" data-lazy-style="--bg-default: url('../img/gym-video.jpg');--bg-default2x: url('../img/gym-video@2x.jpg');--bg-webp: url('../img/gym-video.webp');--bg-webp2x: url('../img/gym-video@2x.webp');--bg-webpTablet: url('../img/gym-video.webp');--bg-webpTablet2x: url('../img/gym-videoo@2x.webp');--bg-webpMobile: url('../img/gym-video-mobile.webp');--bg-webpMobile2x: url('../img/gym-video-mobile@2x.webp');">
+                  <span class="visually-hidden">Проиграть видео.</span>
+                </a>
+              </div>
+            </div> -->
+
             <div class="description__video" id="player">
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/gym-video.webp 1x, img/gym-video@2x.webp 2x">
@@ -210,40 +219,97 @@
             </picture>
           </div>
         </section>
+
+        <!-- Тренера -->
+        <section class="trainers-page">
+          <div class="container trainers-page__container">
+            <h2>Тренеры</h2>
+            <ul class="trainers-page__list">
+
+              <!-- 1 тренер -->
+              <li class="trainers-page__item" tabindex="0">
+                <div class="trainers-page__image">
+                  <source type="image/webp" srcset="img/trainer-1.webp 1x, img/trainer-1@2x.webp 2x">
+                  <img class="trainers-page__img" src="img/trainer-1.jpg" srcset="img/trainer-1@2x.jpg 2x" width="260" height="294" alt="Фотография тренера Анна Павлова, она с длиными темными волосами в бордовой толстовке." loading="lazy">
+                </div>
+                <div class="trainers-page__box">
+                  <h3>Анна Павлова</h3>
+                  <div class="trainers-page__inner">
+                    <h4>CrossFit</h4>
+                    <ul class="trainers-page__text">
+                      <li>Certified Level 3 Trainer</li>
+                      <li>Победитель чемпионата России по CrossFit </li>
+                      <li>Опыт — 6 лет</li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+
+              <!-- 2 тренер -->
+              <li class="trainers-page__item" tabindex="0">
+                <div class="trainers-page__image">
+                  <source type="image/webp" srcset="img/trainer-2.webp 1x, img/trainer-2@2x.webp 2x">
+                  <img class="trainers-page__img" src="img/trainer-2.jpg" srcset="img/trainer-2@2x.jpg 2x" width="260" height="294" alt="Фотография тренера Алексея Лаврова." loading="lazy">
+                </div>
+                <div class="trainers-page__box">
+                  <h3>Алексей Лавров</h3>
+                  <div class="trainers-page__inner">
+                    <h4>CrossFit</h4>
+                    <ul class="trainers-page__text">
+                      <li>Certified Level 3 Trainer</li>
+                      <li>Победитель чемпионата России по CrossFit </li>
+                      <li>Опыт — 10 лет</li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+
+              <!-- 3 тренер -->
+              <li class="trainers-page__item" tabindex="0">
+                <div class="trainers-page__image">
+                  <source type="image/webp" srcset="img/trainer-3.webp 1x, img/trainer-3@2x.webp 2x">
+                  <img class="trainers-page__img" src="img/trainer-3.jpg" srcset="img/trainer-3@2x.jpg 2x" width="260" height="294" alt="Фотография тренера Александра Пашкова, он в очках в футболке без руковов." loading="lazy">
+                </div>
+                <div class="trainers-page__box">
+                  <h3>Александр Пашков</h3>
+                  <div class="trainers-page__inner">
+                    <h4>CrossFit</h4>
+                    <ul class="trainers-page__text">
+                      <li>Certified Level 3 Trainer</li>
+                      <li>Победитель чемпионата России по CrossFit</li>
+                      <li>Опыт — 6 лет</li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+
+              <!-- 4 тренер -->
+              <li class="trainers-page__item" tabindex="0">
+                <div class="trainers-page__image">
+                  <source type="image/webp" srcset="img/trainer-4.webp 1x, img/trainer-4@2x.webp 2x">
+                  <img class="trainers-page__img" src="img/trainer-4.jpg" srcset="img/trainer-4@2x.jpg 2x" width="260" height="294" alt="Фотография тренера Марии Кетова, она с длиными черными волосами в темной толстовке." loading="lazy">
+                </div>
+                <div class="trainers-page__box">
+                  <h3>Мария Кетова</h3>
+                  <div class="trainers-page__inner">
+                    <h4>CrossFit</h4>
+                    <ul class="trainers-page__text">
+                      <li>Certified Level 3 Trainer</li>
+                      <li>Победитель чемпионата России по CrossFit </li>
+                      <li>Опыт — 3 года</li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
       </main>
       <footer>
         <div class="container"></div>
       </footer>
     </div>
 
-    <!-- Модалки -->
-    <div class="modal modal--preload" data-modal="feedback">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Обычная модалка</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
 
     <script>
       window.pixelperfect = {

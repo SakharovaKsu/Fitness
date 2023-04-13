@@ -207,6 +207,14 @@
   }
 }
 
+@media (max-width: ($vp-1280 - 1px)) {
+  .tab__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+}
+
 @media (max-width: ($vp-1024 - 1px)) {
   .tab {
     padding-top: 100px;
@@ -233,8 +241,6 @@
   }
 
   .tab__list {
-    display: flex;
-    flex-wrap: wrap;
     gap: 38px;
     justify-content: space-evenly;
   }

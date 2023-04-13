@@ -40,7 +40,7 @@
 .description__text {
   padding-top: 39px;
   padding-left: 60px;
-  max-width: 550px;
+  max-width: 450px;
 }
 
 .description__text h2 {
@@ -79,13 +79,19 @@
   .description__video {
     width: 364px;
     height: 228px;
-    top: 284px;
+    top: 408px;
     left: 53%;
     transform: translateX(-50%);
   }
 
   .description__text {
     max-width: 420px;
+  }
+}
+
+@media (max-width: ($vp-1280 - 1px)) {
+  .description__video {
+    top: 478px;
   }
 }
 

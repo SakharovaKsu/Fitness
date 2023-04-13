@@ -14,6 +14,11 @@
     padding: 0;
   }
 
+  @include vp-1279 {
+    max-width: 976px;
+    margin: 0 auto;
+  }
+
   @include vp-1023 {
     padding: 0 45px;
   }
