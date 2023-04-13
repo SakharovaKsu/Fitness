@@ -1,15 +1,5 @@
-.video {
-  // position: relative;
-  // padding-top: calc(22800% / 364);
-  // background-color: $color-sapphire;
-
-  // @include vp-375 {
-  //   padding-top: calc(16700% / 320);
-  // }
-
-  > span {
-    display: none; // savefrom
-  }
+.video > span {
+  display: none; // savefrom
 }
 
 .video__player,
@@ -29,23 +19,37 @@
   display: flex;
 
   @include graphic-retina ("gym-video");
-  // background-image: url('.......');
   background-size: cover;
   border: none;
   border-radius: 0;
   cursor: pointer;
 
   &::before {
+    position: absolute;
     content: "";
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
     margin: auto;
     width: 100px;
     height: 100px;
-    background-image: url("../img/sprite.svg#play");
+    background-image: url("../img/svg/play.svg");
+    background-repeat: no-repeat;
+  }
 
-    // @include vp-1280 {
-    //   width: 73px;
-    //   height: 73px;
-    // }
+  &:hover::before,
+  &:focus-visible::before {
+    width: 120px;
+    height: 120px;
+    background-size: 120px 120px;
+  }
+
+  &:active::before {
+    width: 110px;
+    height: 110px;
+    background-size: 110px 110px;
+    opacity: 0.9;
   }
 }
 
@@ -56,5 +60,27 @@
 
   .video__control {
     display: none;
+  }
+}
+
+@media (max-width: ($vp-1024 - 1px))  {
+  .video__control {
+    min-width: 266px;
+    min-height: 167px;
+    @include graphic-retina ("gym-video");
+
+    &:before {
+      width: 73px;
+      height: 73px;
+      background-size: 73px 73px;
+    }
+  }
+}
+
+@media (max-width: ($vp-768 - 1px))  {
+  .video__control {
+    width: 100vw;
+    height: auto;
+    @include graphic-retina ("gym-video-mobile");
   }
 }
