@@ -1,0 +1,231 @@
+.advantages {
+  padding-top: 146px;
+  padding-bottom: 140px;
+  background-color: $color-ghost-white;
+  margin-left: 10px;
+}
+
+.advantages__container h2 {
+  font-family: $ff-alumni-sans;
+  font-size: 54px;
+  line-height: 65px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 53px;
+}
+
+.advantages__list {
+  display: grid;
+  grid-template-columns: 1fr 240px 1fr;
+  gap: 74px 45px;
+  grid-auto-flow: dense;
+  align-items: start;
+  justify-items: center;
+  padding: 0 64px;
+  margin: 0;
+}
+
+.advantages__item {
+  list-style-type: none;
+  margin: 0;
+  display: flex;
+  gap: 10px 29px;
+}
+
+.advantages__item:nth-child(-4n+4),
+.advantages__item:nth-child(-5n+5) {
+  padding-top: 78px;
+  border-top: 2px solid $color-crimson-transparent;
+}
+
+.advantages__item--text {
+  grid-row: span 2;
+  grid-column: 2/3;
+  padding: 66px;
+  color: $color-default-white;
+  background-color: $color-resolution-blue;
+  padding: 35px 30px 59px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 240px;
+  margin-right: 5px;
+  margin-left: -5px;
+}
+
+.advantages__item--text h3 {
+  font-weight: 700;
+  font-size: 74px;
+  line-height: 140%;
+  margin: 0;
+  margin-bottom: 25px;
+  padding-top: 46px;
+}
+
+.advantages__item--text p {
+  font-weight: 700;
+  font-size: 26px;
+  margin: 0;
+  margin-bottom: 29px;
+}
+
+.advantages__item--text span {
+  text-align: center;
+}
+
+.advantages__figures {
+  padding-left: 11px;
+}
+
+.advantages__figures span:first-child {
+  display: block;
+  margin: 0;
+  font-weight: 700;
+  font-size: 71px;
+  overflow-wrap: normal;
+  background-image: $gradient-bg-text;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-top: 16px;
+  padding-bottom: 15px;
+}
+
+.advantages__figures span:last-child {
+  font-weight: 400;
+  font-size: 14px;
+  color: $color-persian-blue;
+}
+
+.advantages__text h3 {
+  font-weight: 700;
+  font-size: 22px;
+  margin: 0;
+  margin-bottom: 9px;
+}
+
+.advantages__text p {
+  font-weight: 300;
+  font-size: 16px;
+  margin: 0;
+}
+
+@media (max-width: ($vp-1024 - 1px)) {
+  .advantages {
+    padding-top: 100px;
+    padding-bottom: 93px;
+    margin-left: 0;
+  }
+
+  .advantages__container h2 {
+    font-size: 42px;
+    line-height: 50px;
+    margin-left: -24px;
+    margin-bottom: 46px;
+  }
+
+  .advantages__list {
+    grid-template-columns: repeat(2,1fr);
+    gap: 43px 30px;
+    padding: 0;
+  }
+
+  .advantages__item--text  {
+    grid-row: 2/3;
+    grid-column: 1/-1;
+    padding-top: 17px;
+    padding-bottom: 39px;
+    margin-left: 3px;
+    min-width: 442px;
+  }
+
+  .advantages__item--text h3 {
+    padding-top: 0;
+    margin: 0;
+  }
+
+  .advantages__item--text p {
+    font-size: 22px;
+    margin-top: -20px;
+    margin-bottom: 7px;
+  }
+
+  .advantages__item--text span {
+    max-width: 172px;
+  }
+
+  .advantages__item:nth-child(-4n+4),
+  .advantages__item:nth-child(-5n+5) {
+    border-top: none;
+    padding-top: 3px;
+  }
+
+  .advantages__figures {
+    padding-left: 0;
+  }
+
+  .advantages__figures span:first-child {
+    font-weight: 700;
+    font-size: 58px;
+    padding-top: 13px;
+    padding-bottom: 11px;
+  }
+
+  .advantages__text h3 {
+    font-size: 20px;
+    margin-bottom: 2px;
+  }
+}
+
+@media (max-width: ($vp-768 - 1px)) {
+  .advantages {
+    padding-top: 43px;
+    padding-bottom: 70px;
+  }
+
+  .advantages__container h2 {
+    font-size: 32px;
+    line-height: 38px;
+    margin-left: -19px;
+  }
+
+  .advantages__list {
+    grid-template-columns: 1fr;
+    gap: 34px;
+    justify-content: center;
+  }
+
+  .advantages__item--text {
+    grid-row: 3/4;
+    min-width: 100vw;
+    margin: 0;
+    margin-top: 9px;
+    margin-bottom: 8px;
+    padding-top: 23px;
+    padding-bottom: 43px;
+  }
+
+  .advantages__item--text p {
+    margin-top: -27px;
+    margin-bottom: 3px;
+  }
+
+  .advantages__item {
+    flex-direction: column;
+    align-items: center;
+
+    &:last-child {
+      gap: 6px;
+    }
+  }
+
+  .advantages__figures {
+    text-align: center;
+  }
+
+  .advantages__text {
+    text-align: center;
+    max-width: 227px;
+  }
+}

@@ -223,6 +223,15 @@
   left: auto;
   transform: rotate(180deg);
 }
+@media (max-width: 1279px) {
+  .swiper-button-prev {
+    left: 0;
+  }
+
+  .swiper-button-next {
+    right: 0;
+  }
+}
 @media (max-width: 1023px) {
   .swiper-button-prev,
   .swiper-button-next {

@@ -141,6 +141,12 @@
   }
 }
 
+@media (max-width: ($vp-1280 - 1px)) {
+  .trainers-page__container {
+    padding: 0 70px;
+  }
+}
+
 @media (max-width: ($vp-1024 - 1px)) {
   .trainers-page__container {
     padding: 0 100px;
