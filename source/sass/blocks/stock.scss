@@ -1,0 +1,129 @@
+.stock {
+  padding-top: 93px;
+  padding-bottom: 110px;
+}
+
+.stock__container h2 {
+  font-family: $ff-alumni-sans;
+  font-size: 54px;
+  line-height: 65px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin: 0;
+  margin-bottom: 34px;
+}
+
+.stock__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.stock__box {
+  display: flex;
+  grid-column: 1/2;
+  grid-row: 1/-1;
+}
+
+.stock__text {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: $color-torch-red;
+  color: $color-default-white;
+  padding: 45px;
+  padding-top: 33px;
+}
+
+.stock__text h3 {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 156%;
+  margin: 0;
+  margin-bottom: -23px;
+}
+
+.stock__text span {
+  display: block;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 156%;
+  margin-bottom: -2px;
+}
+
+.stock__text p {
+  font-size: 18px;
+  line-height: 140%;
+  margin: 0;
+}
+
+.stock__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 0;
+  margin: 0;
+}
+
+.stock__item {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin: 0;
+  border: 7px solid  transparent;
+  border-image: $gradient-red-blue-border;
+  -moz-border-image: -moz-linear-gradient(97.05deg, #003eb7 17.6%, #ed0233 95.31%);
+  -webkit-border-image: -webkit-linear-gradient(97.05deg, #003eb7 17.6%, #ed0233 95.31%);
+  border-image-slice: 1;
+  padding: 25px 28px 28px;
+  height: 100%;
+}
+
+.stock__item h3 {
+  font-weight: 700;
+  font-size: 26px;
+  margin: 0;
+  margin-bottom: 11px;
+}
+
+.stock__item p {
+  line-height: 140%;
+  margin: 0;
+}
+
+.stock__button {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-bottom: 1px solid $color-resolution-blue;
+  margin: auto auto 0 0;
+  text-transform: uppercase;
+
+  @include hover-focus {
+    color: $color-crimson;
+    border-bottom: 1px solid $color-crimson;
+  }
+
+  @include active {
+    color: $color-torch-red;
+    border-bottom: 1px solid $color-neon-blue;
+  }
+}
+
+.stock__button--light {
+  color: $color-default-white;
+  border-bottom: 1px solid $color-default-white;
+
+  @include hover-focus {
+    color: $color-sapphire;
+    border-bottom: 1px solid $color-sapphire;
+  }
+
+  @include active {
+    color: $color-neon-blue;
+    border-bottom: 1px solid $color-neon-blue;
+  }
+}
