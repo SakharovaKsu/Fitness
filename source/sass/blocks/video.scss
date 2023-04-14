@@ -78,9 +78,16 @@
 }
 
 @media (max-width: ($vp-768 - 1px))  {
+  .video__player,
+  .video__control {
+    position: static;
+  }
+
   .video__control {
     width: 100vw;
     height: auto;
+
     @include graphic-retina ("gym-video-mobile");
+    background-size: 100% auto;
   }
 }

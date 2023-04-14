@@ -187,6 +187,7 @@
 @media (max-width: ($vp-768 - 1px)) {
   .promo {
     padding-top: 72px;
+    padding-bottom: 64px;
   }
 
   .promo__container {
@@ -199,5 +200,9 @@
 
   .promo__inner h2 {
     margin: 3px 34px 8px 8px;
+  }
+
+  .promo__img {
+    min-height: 292px;
   }
 }
