@@ -28,6 +28,16 @@
   }
 }
 
+.container--reviews {
+  @include vp-1439 {
+    padding: 0 56px;
+  }
+
+  @include vp-1023 {
+    padding: 0 54px;
+  }
+}
+
 .container--mobile {
   @include vp-767 {
     padding: 0;

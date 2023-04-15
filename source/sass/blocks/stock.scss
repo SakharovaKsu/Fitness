@@ -1,6 +1,6 @@
 .stock {
   padding-top: 93px;
-  padding-bottom: 110px;
+  padding-bottom: 120px;
 }
 
 .stock__container h2 {
@@ -31,6 +31,8 @@
   display: flex;
   flex-direction: column;
   height: 100%;
+  min-height: 462px;
+  width: 280px;
   background-color: $color-torch-red;
   color: $color-default-white;
   padding: 45px;
@@ -134,11 +136,12 @@
 .stock__img {
   width: 100%;
   height: auto;
+  min-height: 462px;
 }
 
 @media (max-width: ($vp-1024 - 1px)) {
   .stock {
-    padding-top: 90px;
+    padding: 90px 0;
   }
 
   .stock__container h2 {
@@ -156,6 +159,7 @@
 
   .stock__text {
     width: 100%;
+    min-height: 299px;
   }
 
   .stock__list {
@@ -176,6 +180,7 @@
 @media (max-width: ($vp-768 - 1px)) {
   .stock {
     padding-top: 56px;
+    padding-bottom: 61px;
   }
 
   .stock__container h2 {

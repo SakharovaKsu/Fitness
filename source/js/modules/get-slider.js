@@ -1,7 +1,7 @@
 const getSlider = () => {
 
   // eslint-disable-next-line no-unused-vars
-  const slider = new Swiper('.swiper', {
+  const sliderCatalog = new Swiper('.trainers-page__swiper', {
     direction: 'horizontal',
     loop: true,
 
@@ -23,6 +23,20 @@ const getSlider = () => {
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
+    },
+  });
+
+  // eslint-disable-next-line no-unused-vars
+  const sliderReviews = new Swiper('.reviews__box', {
+    direction: 'horizontal',
+    grabCursor: true,
+    loop: false,
+    slidesPerView: 1,
+    spaceBetween: 40,
+
+    navigation: {
+      nextEl: '.reviews__button--next ',
+      prevEl: '.reviews__button--prev',
     },
   });
 };
