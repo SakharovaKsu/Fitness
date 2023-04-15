@@ -159,6 +159,10 @@
     margin-left: -7px;
     margin-bottom: 34px;
   }
+
+  .trainers-page__img {
+    height: 294px;
+  }
 }
 
 @media (max-width: ($vp-768 - 1px)) {
@@ -187,5 +191,9 @@
 
   .trainers-page__text li {
     padding-left: 26px;
+  }
+
+  .trainers-page__img {
+    height: 274px;
   }
 }
