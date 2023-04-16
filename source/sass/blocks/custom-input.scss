@@ -3,11 +3,14 @@
   position: relative;
 
   display: flex;
-  width: 530px;
-  padding: 14px 0 28px;
+  padding: 13px 0 0;
+
+  @media screen and (max-width: 1023px) {
+    padding: 28px 0 0;
+  }
 
   @media screen and (max-width: 767px) {
-    padding: 4px 0 48px;
+    padding: 0;
     width: 100%;
   }
 

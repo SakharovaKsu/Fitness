@@ -1,0 +1,253 @@
+.contacts__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.contacts__container h2,
+.contacts__field label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+}
+
+.contacts__box {
+  background-color: $color-sapphire;
+  color: $color-default-white;
+  padding-left: 102px;
+}
+
+.contacts__box,
+.contacts__adress {
+  padding-top: 55px;
+  padding-bottom: 46px;
+}
+
+.contacts__box  h3,
+.contacts__adress h3 {
+  font-family: $ff-alumni-sans;
+  font-weight: 800;
+  font-size: 54px;
+  line-height: 156%;
+  letter-spacing: 0.04em;
+  margin: 0;
+  -webkit-text-stroke: 1px;
+}
+
+.contacts__form {
+  display: grid;
+  grid-template-columns: repeat(2,190px);
+  gap: 30px;
+}
+
+.contacts__field input {
+  padding: 8px 0;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid $color-light-slate-grey;
+  color: inherit;
+  font-size: 14px;
+  line-height: 16px;
+  width: 100%;
+}
+
+.contacts__button {
+  color: $color-default-white;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 3px solid  $color-default-white;
+  padding: 15px;
+  grid-column: 1/-1;
+
+  @include hover-focus {
+    background-color: $color-default-white;
+    color: $color-sapphire;
+  }
+
+  @include active {
+    background-color: $color-default-white;
+    color: $color-torch-red;
+  }
+}
+
+.contacts__adress {
+  border-top: 1px solid $color-light-slate-grey;
+  padding-right: 90px;
+  padding-left: 121px;
+}
+
+.contacts__adress h3 {
+  margin-top: -8px;
+  margin-bottom: 26px;
+}
+
+.contacts__list {
+  position: relative;
+  column-count: 2;
+  column-gap: 111px;
+  padding: 0;
+  padding-left: 3px;
+  margin: 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    padding: 0;
+    top: 6%;
+    left: 49%;
+    width: 1px;
+    height: 78%;
+    background-color: $color-light-slate-grey;
+  }
+}
+
+.contacts__item {
+  list-style-type: none;
+  margin: 0;
+  padding-bottom: 17px;
+}
+
+.contacts__item h4 {
+  font-weight: 700;
+  margin: 0;
+  padding-bottom: 4px;
+}
+
+.contacts__item p,
+.contacts__item a {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  margin: 0;
+}
+
+.contacts__item a {
+  display: block;
+}
+
+@media (max-width: ($vp-1280 - 1px)) {
+  .contacts__box,
+  .contacts__adress {
+    display: grid;
+    justify-content: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: ($vp-1024 - 1px)) {
+  .contacts__container {
+    grid-template-columns: 1fr;
+  }
+
+  .contacts__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 62px 156px 69px 129px;
+  }
+
+  .contacts__adress h3,
+  .contacts__box h3 {
+    font-size: 42px;
+    line-height: 50px;
+  }
+
+  .contacts__form {
+    grid-template-columns: repeat(2, 206px);
+    column-gap: 63px;
+  }
+
+  .contacts__adress {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 61px;
+    padding-left: 44px;
+  }
+
+  .contacts__adress h3 {
+    margin-top: 0;
+    margin-bottom: 35px;
+    margin-left: -403px;
+  }
+
+  .contacts__list {
+    padding-left: 0;
+    column-gap: 97px;
+    margin-left: -14px;
+
+    &::before {
+      top: 3%;
+      left: 50%;
+    }
+  }
+
+  .contacts__item {
+    padding-bottom: 23px;
+  }
+
+  .contacts__item h4 {
+    font-size: 20px;
+    padding-bottom: 8px;
+  }
+
+  .contacts__item a,
+  .contacts__item p {
+    font-size: 18px;
+    line-height: 152.34%;
+  }
+}
+
+@media (max-width: ($vp-768 - 1px))  {
+  .contacts__adress,
+  .contacts__box {
+    padding: 63px 15px 68px;
+    align-items: flex-start;
+  }
+
+  .contacts__box h3,
+  .contacts__adress h3 {
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: .03em;
+    margin-left: 0;
+  }
+
+  .contacts__form {
+    width: 100%;
+    grid-template-columns: 1fr;
+    padding-top: 29px;
+  }
+
+  .contacts__list {
+    margin-left: 0;
+    column-count: 1;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .contacts__adress {
+    padding-bottom: 39px;
+  }
+
+  .contacts__adress h3 {
+    margin-bottom: 39px;
+  }
+
+  .contacts__button {
+    margin-top: 8px;
+  }
+}
