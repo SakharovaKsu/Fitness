@@ -1480,118 +1480,6 @@ button,
   margin: 0 auto;
 }
 
-.modal {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1000;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
-  background-color: rgba(16, 38, 84, 0.8);
-  -webkit-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  transform: scale(1.2);
-  visibility: hidden;
-  opacity: 0;
-  -webkit-transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
-  transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
-  -o-transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), transform 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1);
-  transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), transform 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1);
-  transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), transform 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
-  pointer-events: none;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
-.modal::-webkit-scrollbar {
-  display: none;
-}
-
-.modal__wrapper {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
-  min-height: 100%;
-  padding: 60px 40px;
-}
-
-.modal__overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
-}
-
-.modal__content {
-  position: relative;
-  width: 600px;
-  padding: 40px;
-  background-color: #ffffff;
-}
-
-.modal__close-btn {
-  position: absolute;
-  top: 22px;
-  right: 22px;
-  z-index: 1;
-  width: 40px;
-  height: 40px;
-  padding: 0;
-  background: rgba(255, 255, 255, 0);
-  border: none;
-  cursor: pointer;
-}
-
-.modal--responsive .modal__content {
-  width: 100%;
-}
-
-.modal--fit-content .modal__content {
-  width: auto;
-}
-
-.modal--no-scale {
-  -webkit-transform: none;
-  -ms-transform: none;
-  transform: none;
-}
-
-.modal--preload {
-  -webkit-transition: none;
-  -o-transition: none;
-  transition: none;
-}
-
-.modal.is-active {
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-  visibility: visible;
-  opacity: 1;
-  pointer-events: auto;
-}
-
 .custom-input,
 .custom-textarea {
   position: relative;
@@ -1623,7 +1511,7 @@ button,
   min-height: 48px;
   margin-left: auto;
   padding: 10px;
-  border: 2px solid rgba(0, 0, 0, 0.2);
+  border: 2px solid rgba(16, 38, 84, 0.2);
   border-radius: 5px;
   outline: none;
   -webkit-transition: border 0.3s ease;
@@ -1635,14 +1523,14 @@ button,
 .custom-input label textarea:hover,
 .custom-textarea label input:hover,
 .custom-textarea label textarea:hover {
-  border: 2px solid rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(16, 38, 84, 0.5);
 }
 
 .custom-input label input:focus,
 .custom-input label textarea:focus,
 .custom-textarea label input:focus,
 .custom-textarea label textarea:focus {
-  border: 2px solid rgba(0, 0, 0, 0.8);
+  border: 2px solid rgba(16, 38, 84, 0.8);
 }
 
 .custom-input__error,
@@ -1697,12 +1585,12 @@ button,
 
 .custom-input .input-message.is-invalid,
 .custom-textarea .input-message.is-invalid {
-  color: #ff0000;
+  color: #ff1553;
 }
 
 .custom-input .input-message.is-valid,
 .custom-textarea .input-message.is-valid {
-  color: #15ab07;
+  color: #22b259;
 }
 
 .firstscreen {
@@ -3293,47 +3181,6 @@ button,
   fill: #ed0233;
 }
 
-/* @mixin hover-focus {
-    @media (hover: hover) {
-      &:hover:not(.focus-visible) {
-        @content;
-      }
-    }
-
-    &.focus-visible:focus {
-      @content;
-    }
-  }
-*/
-
-/*  @include hover-focus {
-      opacity: 0.8;
-    }
-*/
-
-/*@mixin hover {
-    @media (hover: hover) {
-      &:hover:not(.focus-visible) {
-        @content;
-      }
-    }
-  }
-*/
-
-/*@mixin focus {
-    &.focus-visible:focus {
-      @content;
-    }
-  }
-*/
-
-/*@mixin active {
-    &.focus-visible:active {
-      @content;
-    }
-  }
-*/
-
 @media (min-width: 1024px) {
 @supports (background-image: url("../img/background-picture-desktop.webp")) {
     .tab::before {
@@ -4142,19 +3989,6 @@ button,
 
   .container--mobile {
     padding: 0;
-  }
-
-  .modal__wrapper {
-    padding: 60px 16px;
-  }
-
-  .modal__content {
-    width: 100%;
-    padding: 20px;
-  }
-
-  .modal--fit-content .modal__content {
-    width: 100%;
   }
 
   .firstscreen {
