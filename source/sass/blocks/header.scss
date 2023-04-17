@@ -8,6 +8,8 @@
 }
 
 .header__logo {
+  fill: $color-default-white;
+
   @include hover-focus {
     opacity: 0.6;
   }
