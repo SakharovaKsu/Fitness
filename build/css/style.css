@@ -1476,10 +1476,8 @@ button,
 }
 
 .container {
-  width: 100%;
-  max-width: 1920px;
+  max-width: 1160px;
   margin: 0 auto;
-  padding: 0 350px;
 }
 
 .modal {
@@ -1694,6 +1692,7 @@ button,
   position: absolute;
   right: 0;
   bottom: -5px;
+  font-size: 12px;
 }
 
 .custom-input .input-message.is-invalid,
@@ -2597,7 +2596,7 @@ button,
 }
 
 .tab__item:hover {
-  padding: 49px 70px;
+  padding: 51px 70px;
   border: 7px solid transparent;
   -o-border-image: -o-linear-gradient(309deg, #d10a42 22%, #103aae 74%);
   border-image: linear-gradient(141deg, #d10a42 22%, #103aae 74%);
@@ -2605,7 +2604,7 @@ button,
 }
 
 .tab__item.focus-visible:focus {
-  padding: 49px 70px;
+  padding: 51px 70px;
   border: 7px solid transparent;
   -o-border-image: -o-linear-gradient(309deg, #d10a42 22%, #103aae 74%);
   border-image: linear-gradient(141deg, #d10a42 22%, #103aae 74%);
@@ -3743,12 +3742,28 @@ button,
 }
 
 @media (max-width: 1919px) {
+  .swiper-button-prev {
+    left: 0;
+  }
+
+  .swiper-button-next {
+    right: 0;
+  }
+
   .container {
     padding: 0 110px;
   }
 }
 
 @media (max-width: 1439px) {
+  .swiper-button-prev {
+    left: -57px;
+  }
+
+  .swiper-button-next {
+    right: -57px;
+  }
+
   .container {
     max-width: 1160px;
     margin: 0 auto;
@@ -3810,6 +3825,11 @@ button,
 
   .swiper-button-next {
     right: 0;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    top: 200px;
   }
 
   .container {

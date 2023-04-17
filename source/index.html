@@ -556,14 +556,14 @@
         <section class="contacts">
           <div class="contacts__container">
             <h2>Конакты</h2>
-            <div class="contacts__box">
+            <div class="contacts__box" data-form-validate data-callback="base">
               <h3>Бесплатное занятие</h3>
               <form class="contacts__form" action="https://echo.htmlacademy.ru/" method="post" novalidate>
-                <div class="contacts__field custom-input" data-validate-type="text" data-limitation="name" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required>
+                <div class="contacts__field custom-input" data-validate-type="text" data-limitation="name" data-message-base="Поле обязательно к заполнению" data-message-extra="Поле заполнено не правильно" data-required>
                   <label for="name">Имя</label>
                   <input id="name" type="text" name="name" placeholder="Имя" pattern="^[A-Za-zА-Яа-яЁё\-]+$" required="">
                 </div>
-                <div class="contacts__field custom-input" data-validate-type="phone" data-on-input-validate data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required data-phone-length="11">
+                <div class="contacts__field custom-input" data-validate-type="phone" data-on-input-validate data-message-base="Поле обязательно к заполнению" data-message-extra="Поле заполнено не правильно" data-required data-phone-length="18">
                   <label for="tel">Телефон</label>
                   <input id="tel" type="tel" name="phone" placeholder="Телефон" pattern="^\+?[\d ()-]+$" required>
                 </div>

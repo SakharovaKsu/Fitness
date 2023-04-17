@@ -129,7 +129,7 @@
   background-color: $color-default-white;
 
   @include hover-focus {
-    padding: 49px 70px;
+    padding: 51px 70px;
     border: 7px solid transparent;
     border-image: linear-gradient(141deg, $color-crimson 22%, $color-egyptian-blue 74%);
     border-image-slice: 7;
