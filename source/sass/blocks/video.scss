@@ -17,7 +17,7 @@
   display: flex;
   width: 364px;
   height: 228px;
-  left: -185px;
+  left: -15px;
 
   @include graphic-retina ("gym-video");
   background-size: cover;
@@ -68,6 +68,10 @@
   .video__player,
   .video__control {
     top: 0;
+  }
+
+  .video__control {
+    left: -185px;
   }
 }
 

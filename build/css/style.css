@@ -1985,7 +1985,7 @@ button,
   display: flex;
   width: 364px;
   height: 228px;
-  left: -185px;
+  left: -15px;
   background-size: cover;
   border: none;
   border-radius: 0;
@@ -3038,7 +3038,7 @@ button,
   align-items: flex-end;
   background-color: #102654;
   color: #ffffff;
-  padding-left: 102px;
+  padding-left: calc(100% - 580px);
   padding-right: 172px;
 }
 
@@ -3110,7 +3110,7 @@ button,
 
 .contacts__adress {
   border-top: 1px solid #74819c;
-  padding-right: 90px;
+  padding-right: calc(100% - 580px);
   padding-left: 121px;
 }
 
@@ -3437,6 +3437,10 @@ button,
   .video__player,
   .video__control {
     top: 0;
+  }
+
+  .video__control {
+    left: -185px;
   }
 
   .trainers-page__container {

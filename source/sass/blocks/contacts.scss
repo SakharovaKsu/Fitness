@@ -23,7 +23,7 @@
   align-items: flex-end;
   background-color: $color-sapphire;
   color: $color-default-white;
-  padding-left: 102px;
+  padding-left: calc(100% - 580px);
   padding-right: 172px;
 }
 
@@ -87,7 +87,7 @@
 
 .contacts__adress {
   border-top: 1px solid $color-light-slate-grey;
-  padding-right: 90px;
+  padding-right: calc(100% - 580px);;
   padding-left: 121px;
 }
 
