@@ -18,9 +18,13 @@
 }
 
 .contacts__box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   background-color: $color-sapphire;
   color: $color-default-white;
   padding-left: 102px;
+  padding-right: 172px;
 }
 
 .contacts__box,
@@ -31,6 +35,7 @@
 
 .contacts__box  h3,
 .contacts__adress h3 {
+  align-self: flex-start;
   font-family: $ff-alumni-sans;
   font-weight: 800;
   font-size: 54px;

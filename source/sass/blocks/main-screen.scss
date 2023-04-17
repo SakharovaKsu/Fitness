@@ -1,5 +1,5 @@
 .main-screen {
-  margin-top: -30px;
+  margin-top: -20px;
   padding-bottom: 50px;
 }
 
@@ -28,6 +28,7 @@
   letter-spacing: 0.03em;
   padding-bottom: 16px;
   padding-right: 51px;
+  padding-left: 240px;
 }
 
 .main-screen__text {
@@ -44,7 +45,7 @@
   letter-spacing: 0.05em;
   color: $color-default-white;
   text-transform: uppercase;
-  -webkit-text-stroke: 4px; 
+  -webkit-text-stroke: 4px;
   margin: 0;
   order: 1;
   max-width: 264px;
@@ -81,6 +82,7 @@
   @include hover-focus {
     background-color: $color-default-white;
     color: $color-egyptian-blue;
+    outline: none;
   }
 
   @include active {
@@ -90,9 +92,19 @@
 }
 
 @media (max-width: ($vp-1440 - 1px)) {
+  .main-screen {
+    margin-top: -30px;
+  }
+
   .main-screen__container{
     justify-content: flex-end;
     column-gap: 65px;
+  }
+}
+
+@media (max-width: ($vp-1280 - 1px)) {
+  .main-screen {
+    margin-top: -10px;
   }
 }
 
@@ -105,7 +117,7 @@
 
   .main-screen__container {
     column-gap: 29px;
-    justify-content: flex-start;
+    justify-content: center;
   }
 
   .main-screen__img {
@@ -162,6 +174,8 @@
   }
 
   .main-screen__box {
+    // align-items: flex-end;
+    align-items: center;
     padding-bottom: 0;
   }
 
@@ -172,6 +186,7 @@
   }
 
   .main-screen__text {
+    justify-content: center;
     column-gap: 0;
     padding-bottom: 23px;
   }

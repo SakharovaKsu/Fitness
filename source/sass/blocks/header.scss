@@ -9,13 +9,15 @@
 
 .header__logo {
   fill: $color-default-white;
+}
 
+.header__container .header__logo {
   @include hover-focus {
-    opacity: 0.6;
+    opacity: 0.3;
   }
 
   @include active {
-    opacity: 0.3;
+    opacity: 0.6;
   }
 }
 
@@ -28,6 +30,7 @@
 
   @include hover-focus {
     color: $color-midnight-express;
+    outline: none;
   }
 
   @include active {

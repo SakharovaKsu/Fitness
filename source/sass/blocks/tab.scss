@@ -73,6 +73,7 @@
 
   @include hover-focus {
     color: $color-crimson;
+    outline: none;
   }
 
   @include active {
@@ -133,6 +134,7 @@
     border: 7px solid transparent;
     border-image: linear-gradient(141deg, $color-crimson 22%, $color-egyptian-blue 74%);
     border-image-slice: 7;
+    outline: none;
   }
 }
 
@@ -247,6 +249,14 @@
 
   .tab__item {
     min-width: 442px;
+
+    @include active {
+      padding: 51px 70px;
+      border: 7px solid transparent;
+      border-image: linear-gradient(141deg, $color-crimson 22%, $color-egyptian-blue 74%);
+      border-image-slice: 7;
+      outline: none;
+    }
   }
 
   .tab__item a {
@@ -287,6 +297,10 @@
     padding-bottom: 51px;
     min-width: 290px;
     width: 290px;
+
+    @include hover-focus {
+      padding: 42px 70px;
+    }
   }
 
 
