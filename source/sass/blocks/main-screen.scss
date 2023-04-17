@@ -10,6 +10,10 @@
   justify-content: center;
 }
 
+.main-screen__img {
+  background-color: $color-egyptian-blue;
+}
+
 .main-screen__box {
   display: flex;
   align-items: flex-end;
@@ -96,7 +100,7 @@
     margin-top: -30px;
   }
 
-  .main-screen__container{
+  .main-screen__container {
     justify-content: flex-end;
     column-gap: 65px;
   }

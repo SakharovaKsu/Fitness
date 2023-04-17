@@ -27,6 +27,10 @@
 }
 
 .container--reviews {
+  @include vp-1919 {
+    padding: 0 50px;
+  }
+
   @include vp-1439 {
     padding: 0 56px;
   }

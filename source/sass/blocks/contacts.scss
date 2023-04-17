@@ -33,7 +33,7 @@
   padding-bottom: 46px;
 }
 
-.contacts__box  h3,
+.contacts__box h3,
 .contacts__adress h3 {
   align-self: flex-start;
   font-family: $ff-alumni-sans;
@@ -47,7 +47,7 @@
 
 .contacts__form {
   display: grid;
-  grid-template-columns: repeat(2,190px);
+  grid-template-columns: repeat(2, 190px);
   gap: 30px;
 }
 
@@ -87,7 +87,7 @@
 
 .contacts__adress {
   border-top: 1px solid $color-light-slate-grey;
-  padding-right: calc(100% - 580px);;
+  padding-right: calc(100% - 580px);
   padding-left: 121px;
 }
 
@@ -215,7 +215,7 @@
   }
 }
 
-@media (max-width: ($vp-768 - 1px))  {
+@media (max-width: ($vp-768 - 1px)) {
   .contacts__adress,
   .contacts__box {
     padding: 63px 15px 68px;
@@ -226,7 +226,7 @@
   .contacts__adress h3 {
     font-size: 32px;
     line-height: 38px;
-    letter-spacing: .03em;
+    letter-spacing: 0.03em;
     margin-left: 0;
   }
 

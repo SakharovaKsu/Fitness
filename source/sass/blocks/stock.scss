@@ -78,8 +78,6 @@
   margin: 0;
   border: 7px solid  transparent;
   border-image: $gradient-red-blue-border;
-  -moz-border-image: -moz-linear-gradient(97.05deg, #003eb7 17.6%, #ed0233 95.31%);
-  -webkit-border-image: -webkit-linear-gradient(97.05deg, #003eb7 17.6%, #ed0233 95.31%);
   border-image-slice: 1;
   padding: 25px 28px 28px;
   height: 100%;
@@ -105,7 +103,6 @@
   text-transform: uppercase;
   border-bottom: 1px solid $color-resolution-blue;
   margin: auto auto 0 0;
-  text-transform: uppercase;
 
   @include hover-focus {
     color: $color-crimson;
@@ -137,6 +134,7 @@
   width: 100%;
   height: auto;
   min-height: 462px;
+  background-color: $color-persian-blue;
 }
 
 @media (max-width: ($vp-1024 - 1px)) {

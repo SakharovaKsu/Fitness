@@ -41,6 +41,7 @@
   height: 80px;
   border-radius: 50%;
   margin-top: 5px;
+  background-color: $color-spindle;
 }
 
 .reviews__text {
@@ -71,7 +72,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  transition: opacity .3s ease;
+  transition: opacity 0.3s ease;
   cursor: pointer;
   z-index: 3;
 

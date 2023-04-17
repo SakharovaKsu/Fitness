@@ -3,6 +3,10 @@ const tabsBtn = document.querySelectorAll('[data-tab-button]');
 const tabsContent = document.querySelectorAll('[data-tab-content]');
 
 export const initTabs = (e) => {
+  if (!tab) {
+    return;
+  }
+
   tabsContent.forEach((container) => {
     container.classList.add('is-hidden');
   });

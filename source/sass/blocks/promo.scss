@@ -11,10 +11,10 @@
 .promo__inner {
   display: grid;
   grid-template-areas:
-                        "title text"
-                        "title about"
-                        "description description"
-                        "btn btn";
+    "title text"
+    "title about"
+    "description description"
+    "btn btn";
   padding: 81px 79px;
   color: $color-default-white;
   background-color: $color-torch-red;
@@ -119,6 +119,7 @@
   object-fit: cover;
   width: 100%;
   height: 100%;
+  background-color: $color-resolution-blue;
 }
 
 @media (max-width: ($vp-1024 - 1px)) {

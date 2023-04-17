@@ -59,7 +59,6 @@
   border: none;
   font-size: 20px;
   line-height: 150%;
-  margin: 0;
   background-color: transparent;
   color: $color-sapphire-translucent;
 
@@ -174,7 +173,7 @@
   z-index: 1;
 
   &::before {
-    content: attr(text);
+    content: attr(data-price);
     position: absolute;
     bottom: 27px;
     left: -10%;

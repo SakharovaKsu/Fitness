@@ -23,6 +23,7 @@
   background-size: cover;
   border: none;
   border-radius: 0;
+  background-color: $color-resolution-blue;
   cursor: pointer;
 
   &::before {
@@ -64,7 +65,7 @@
   }
 }
 
-@media (max-width: ($vp-1440 - 1px))  {
+@media (max-width: ($vp-1440 - 1px)) {
   .video__player,
   .video__control {
     top: 0;
@@ -75,7 +76,7 @@
   }
 }
 
-@media (max-width: ($vp-1024 - 1px))  {
+@media (max-width: ($vp-1024 - 1px)) {
   .video__control {
     left: 0;
     right: 0;
@@ -85,7 +86,7 @@
 
     @include graphic-retina ("gym-video");
 
-    &:before {
+    &::before {
       width: 73px;
       height: 73px;
       background-size: 73px 73px;
@@ -93,7 +94,7 @@
   }
 }
 
-@media (max-width: ($vp-768 - 1px))  {
+@media (max-width: ($vp-768 - 1px)) {
   .video__player,
   .video__control {
     position: static;

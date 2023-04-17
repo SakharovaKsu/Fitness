@@ -1781,6 +1781,10 @@ button,
   justify-content: center;
 }
 
+.main-screen__img {
+  background-color: #103aae;
+}
+
 .main-screen__box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1908,6 +1912,7 @@ button,
   height: 400px;
   -o-object-fit: cover;
   object-fit: cover;
+  background-color: #b6bdcc;
 }
 
 .description__video {
@@ -1989,6 +1994,7 @@ button,
   background-size: cover;
   border: none;
   border-radius: 0;
+  background-color: #1c3374;
   cursor: pointer;
 }
 
@@ -2113,7 +2119,6 @@ button,
   border: none;
   font-size: 20px;
   line-height: 150%;
-  margin: 0;
   background-color: transparent;
   color: rgba(16, 38, 84, 0.5);
 }
@@ -2255,7 +2260,7 @@ button,
 }
 
 .tab__item span::before {
-  content: attr(text);
+  content: attr(data-price);
   position: absolute;
   bottom: 27px;
   left: -10%;
@@ -2428,6 +2433,7 @@ button,
   object-fit: cover;
   width: 100%;
   height: 100%;
+  background-color: #1c3374;
 }
 
 .trainers-page {
@@ -2549,7 +2555,6 @@ button,
 
 .trainers-page__text {
   padding: 0;
-  margin: 0;
   max-width: 175px;
   margin: 31px 0 0;
 }
@@ -2639,7 +2644,6 @@ button,
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
-  padding: 66px;
   color: #ffffff;
   background-color: #1c3374;
   padding: 35px 30px 59px;
@@ -2662,7 +2666,6 @@ button,
   font-weight: 700;
   font-size: 74px;
   line-height: 140%;
-  margin: 0;
   margin: 0 0 -14px;
   padding-top: 5px;
 }
@@ -2688,11 +2691,10 @@ button,
   font-weight: 700;
   font-size: 71px;
   overflow-wrap: normal;
-  background-image: -o-linear-gradient(322.39deg, #D10A42 0%, #0041CA 45.58%);
-  background-image: linear-gradient(127.61deg, #D10A42 0%, #0041CA 45.58%);
-  background-clip: text;
+  background-image: -o-linear-gradient(322.39deg, #d10a42 0%, #0041ca 45.58%);
+  background-image: linear-gradient(127.61deg, #d10a42 0%, #0041ca 45.58%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background-clip: text;
   padding-top: 16px;
   padding-bottom: 15px;
 }
@@ -2824,7 +2826,6 @@ button,
   border: 7px solid transparent;
   -o-border-image: -o-linear-gradient(352.95deg, #003eb7 17.6%, #ed0233 95.31%);
   border-image: linear-gradient(97.05deg, #003eb7 17.6%, #ed0233 95.31%);
-  -webkit-border-image: -webkit-linear-gradient(97.05deg, #003eb7 17.6%, #ed0233 95.31%);
   border-image-slice: 1;
   padding: 25px 28px 28px;
   height: 100%;
@@ -2850,7 +2851,6 @@ button,
   text-transform: uppercase;
   border-bottom: 1px solid #1c3374;
   margin: auto auto 0 0;
-  text-transform: uppercase;
 }
 
 .stock__button:hover {
@@ -2892,6 +2892,7 @@ button,
   width: 100%;
   height: auto;
   min-height: 462px;
+  background-color: #2e35ac;
 }
 
 .reviews {
@@ -2939,6 +2940,7 @@ button,
   height: 80px;
   border-radius: 50%;
   margin-top: 5px;
+  background-color: #b6bdcc;
 }
 
 .reviews__text {
@@ -3372,6 +3374,10 @@ button,
   .container {
     padding: 0 110px;
   }
+
+  .container--reviews {
+    padding: 0 50px;
+  }
 }
 
 @media (max-width: 1439px) {
@@ -3696,7 +3702,7 @@ button,
     }
 }
 
-  .video__control:before {
+  .video__control::before {
     width: 73px;
     height: 73px;
     background-size: 73px 73px;
