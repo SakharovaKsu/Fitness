@@ -20,8 +20,8 @@
   position: absolute;
     top: 408px;
     left: 39.5%;
-    width: 364px;
-    height: 228px;
+    // width: 364px;
+    // height: 228px;
     z-index: 1;
 }
 
@@ -77,8 +77,8 @@
   }
 
   .description__video {
-    width: 364px;
-    height: 228px;
+    // width: 364px;
+    // height: 228px;
     top: 408px;
     left: 53%;
     transform: translateX(-50%);
@@ -98,7 +98,7 @@
 @media (max-width: ($vp-1024 - 1px)) {
   .description {
     padding-top: 61px;
-    padding-bottom: 15px;
+    padding-bottom: 184px;
   }
 
   .description__container {
@@ -113,8 +113,6 @@
 
   .description__video {
     position: relative;
-    width: 266px;
-    height: 167px;
     top: -84px;
     left: 50%;
     transform: translateX(-50%);
