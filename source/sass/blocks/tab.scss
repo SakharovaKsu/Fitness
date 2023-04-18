@@ -125,11 +125,11 @@
   margin: 0;
   text-align: center;
   list-style-type: none;
-  padding: 58px 77px 69px;
+  padding: 51px 70px 62px;
   background-color: $color-default-white;
+  border: 7px solid $color-default-white;
 
   @include hover-focus {
-    padding: 51px 70px;
     border: 7px solid transparent;
     border-image: linear-gradient(141deg, $color-crimson 22%, $color-egyptian-blue 74%);
     border-image-slice: 7;
@@ -250,7 +250,6 @@
     min-width: 442px;
 
     @include active {
-      padding: 51px 70px;
       border: 7px solid transparent;
       border-image: linear-gradient(141deg, $color-crimson 22%, $color-egyptian-blue 74%);
       border-image-slice: 7;
@@ -292,14 +291,10 @@
   }
 
   .tab__item {
-    padding-top: 50px;
-    padding-bottom: 51px;
+    padding-top: 42px;
+    padding-bottom: 44px;
     min-width: 290px;
     width: 290px;
-
-    @include hover-focus {
-      padding: 42px 70px;
-    }
   }
 
 

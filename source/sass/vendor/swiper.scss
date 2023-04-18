@@ -225,11 +225,11 @@
 }
 @media (max-width: 1919px) {
   .swiper-button-prev {
-    left: 0;
+    left: -60px;
   }
 
   .swiper-button-next {
-    right: 0;
+    right: -60px;
   }
 }
 
@@ -253,7 +253,7 @@
 
   .swiper-button-prev,
   .swiper-button-next {
-    top: 200px;
+    top: 59%;
   }
 }
 @media (max-width: 1023px) {
@@ -285,7 +285,7 @@
   .swiper-button-next {
     width: 10px;
     height: 19px;
-    top: 209px;
+    top: 59%;
 
     &:hover,
     &:focus-visible,

@@ -144,6 +144,10 @@
   .trainers-page__container {
     padding: 0 70px;
   }
+
+  .trainers-page__img {
+    height: 100%;
+  }
 }
 
 @media (max-width: ($vp-1024 - 1px)) {
@@ -176,7 +180,9 @@
   }
 
   .trainers-page__item {
-    height: 275px;
+    min-width: 226px;
+    max-width: 100%;
+    height: 85.5vw;
   }
 
   .trainers-page__item:focus-visible .trainers-page__box h3,
@@ -185,7 +191,7 @@
   }
 
   .trainers-page__box {
-    height: 274px;
+    height: 100%;
   }
 
   .trainers-page__text li {
@@ -193,6 +199,6 @@
   }
 
   .trainers-page__img {
-    height: 274px;
+    height: 100%;
   }
 }

@@ -2,10 +2,6 @@
   max-width: 1160px;
   margin: 0 auto;
 
-  @include vp-1919 {
-    padding: 0 110px;
-  }
-
   @include vp-1439 {
     max-width: 1160px;
     margin: 0 auto;
