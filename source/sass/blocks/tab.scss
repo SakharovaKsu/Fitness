@@ -189,14 +189,10 @@
   color: $color-egyptian-blue;
 }
 
-.tab__item a {
+.tab__link {
   display: block;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 14px;
   text-align: center;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
+  color: $color-sapphire;
   border: 2px solid $color-sapphire;
   padding: 24px 24px;
   width: 206px;
@@ -257,7 +253,7 @@
     }
   }
 
-  .tab__item a {
+  .tab__link {
     margin: 0 auto;
   }
 
@@ -327,7 +323,7 @@
     }
   }
 
-  .tab__item a {
+  .tab__link {
     margin-left: -35px;
   }
 }

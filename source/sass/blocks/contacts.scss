@@ -28,13 +28,13 @@
 }
 
 .contacts__box,
-.contacts__adress {
+.contacts__address {
   padding-top: 55px;
   padding-bottom: 46px;
 }
 
 .contacts__box h3,
-.contacts__adress h3 {
+.contacts__address h3 {
   align-self: flex-start;
   font-family: $ff-alumni-sans;
   font-weight: 800;
@@ -63,13 +63,8 @@
 }
 
 .contacts__button {
-  color: $color-default-white;
-  font-weight: 700;
   font-size: 14px;
   line-height: 16px;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  background-color: transparent;
   border: 3px solid  $color-default-white;
   padding: 15px;
   grid-column: 1/-1;
@@ -85,13 +80,13 @@
   }
 }
 
-.contacts__adress {
+.contacts__address {
   border-top: 1px solid $color-light-slate-grey;
   padding-right: calc(100% - 580px);
   padding-left: 121px;
 }
 
-.contacts__adress h3 {
+.contacts__address h3 {
   margin-top: -8px;
   margin-bottom: 26px;
 }
@@ -142,7 +137,7 @@
 
 @media (max-width: ($vp-1280 - 1px)) {
   .contacts__box,
-  .contacts__adress {
+  .contacts__address {
     display: grid;
     justify-content: center;
     padding-left: 0;
@@ -162,7 +157,7 @@
     padding: 62px 156px 69px 129px;
   }
 
-  .contacts__adress h3,
+  .contacts__address h3,
   .contacts__box h3 {
     font-size: 42px;
     line-height: 50px;
@@ -175,13 +170,13 @@
 
   .contacts__box h3,
   .contacts__form,
-  .contacts__adress,
+  .contacts__address,
   .contacts__list {
     width: 472px;
     margin: 0 auto;
   }
 
-  .contacts__adress {
+  .contacts__address {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -190,7 +185,7 @@
     border: none;
   }
 
-  .contacts__adress h3 {
+  .contacts__address h3 {
     margin-top: 0;
     margin-bottom: 35px;
   }
@@ -223,14 +218,14 @@
 }
 
 @media (max-width: ($vp-768 - 1px)) {
-  .contacts__adress,
+  .contacts__address,
   .contacts__box {
     padding: 63px 15px 68px;
     align-items: flex-start;
   }
 
   .contacts__box h3,
-  .contacts__adress h3 {
+  .contacts__address h3 {
     font-size: 32px;
     line-height: 38px;
     letter-spacing: 0.03em;
@@ -245,7 +240,7 @@
 
   .contacts__box h3,
   .contacts__form,
-  .contacts__adress,
+  .contacts__address,
   .contacts__list {
     width: 100%;
     margin: 0 auto;
@@ -260,11 +255,11 @@
     }
   }
 
-  .contacts__adress {
+  .contacts__address {
     padding-bottom: 39px;
   }
 
-  .contacts__adress h3 {
+  .contacts__address h3 {
     margin-bottom: 39px;
   }
 

@@ -73,14 +73,6 @@
 
 .main-screen__button {
   align-items: center;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 14px;
-  color: $color-default-white;
-  border: 4px solid $color-default-white;
-  background-color: transparent;
   padding: 19px 55px;
 
   @include hover-focus {
@@ -178,7 +170,6 @@
   }
 
   .main-screen__box {
-    // align-items: flex-end;
     align-items: center;
     padding-bottom: 0;
   }
