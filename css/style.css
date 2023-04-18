@@ -1480,6 +1480,17 @@ button,
   margin: 0 auto;
 }
 
+.button {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  color: #ffffff;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 4px solid #ffffff;
+}
+
 .custom-input,
 .custom-textarea {
   position: relative;
@@ -1746,14 +1757,6 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 14px;
-  color: #ffffff;
-  border: 4px solid #ffffff;
-  background-color: transparent;
   padding: 19px 55px;
 }
 
@@ -2160,14 +2163,10 @@ button,
   color: #103aae;
 }
 
-.tab__item a {
+.tab__link {
   display: block;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 14px;
   text-align: center;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
+  color: #102654;
   border: 2px solid #102654;
   padding: 24px 24px;
   width: 206px;
@@ -2285,15 +2284,8 @@ button,
   -ms-grid-row: 4;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
   text-align: center;
-  color: #ffffff;
   grid-area: btn;
-  border: 4px solid #ffffff;
   padding: 25px;
   width: 100%;
 }
@@ -2845,21 +2837,10 @@ button,
 }
 
 .reviews__button {
-  position: absolute;
-  display: block;
   top: 60%;
   width: 16px;
   height: 32px;
   border: 0;
-  background-color: transparent;
-  background-image: url("../img/svg/arrov.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  -webkit-transition: opacity 0.3s ease;
-  -o-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease;
-  cursor: pointer;
   z-index: 3;
 }
 
@@ -2872,7 +2853,6 @@ button,
 .reviews__button:active {
   width: 18px;
   height: 34px;
-  background-image: url("../img/svg/arrow-active.svg");
 }
 
 .reviews__button:disabled {
@@ -2885,9 +2865,6 @@ button,
 
 .reviews__button--next {
   right: 0;
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
 }
 
 .contacts__container {
@@ -2930,13 +2907,13 @@ button,
 }
 
 .contacts__box,
-.contacts__adress {
+.contacts__address {
   padding-top: 55px;
   padding-bottom: 46px;
 }
 
 .contacts__box h3,
-.contacts__adress h3 {
+.contacts__address h3 {
   -ms-flex-item-align: start;
   align-self: flex-start;
   font-family: "Alumni Sans", "Arial", sans-serif;
@@ -2968,13 +2945,8 @@ button,
 }
 
 .contacts__button {
-  color: #ffffff;
-  font-weight: 700;
   font-size: 14px;
   line-height: 16px;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  background-color: transparent;
   border: 3px solid #ffffff;
   padding: 15px;
   grid-column: 1/-1;
@@ -2995,13 +2967,13 @@ button,
   color: #ed0233;
 }
 
-.contacts__adress {
+.contacts__address {
   border-top: 1px solid #74819c;
   padding-right: calc(100% - 580px);
   padding-left: 121px;
 }
 
-.contacts__adress h3 {
+.contacts__address h3 {
   margin-top: -8px;
   margin-bottom: 26px;
 }
@@ -3339,7 +3311,7 @@ button,
   }
 
   .contacts__box,
-  .contacts__adress {
+  .contacts__address {
     display: -ms-grid;
     display: grid;
     -webkit-box-pack: center;
@@ -3382,6 +3354,11 @@ button,
 
   .container--reviews {
     padding: 0 54px;
+  }
+
+  .button {
+    font-size: 10px;
+    line-height: 12px;
   }
 
   .firstscreen {
@@ -3605,7 +3582,7 @@ button,
     outline: none;
   }
 
-  .tab__item a {
+  .tab__link {
     margin: 0 auto;
   }
 
@@ -3846,7 +3823,7 @@ button,
     padding: 62px 156px 69px 129px;
   }
 
-  .contacts__adress h3,
+  .contacts__address h3,
   .contacts__box h3 {
     font-size: 42px;
     line-height: 50px;
@@ -3862,13 +3839,13 @@ button,
 
   .contacts__box h3,
   .contacts__form,
-  .contacts__adress,
+  .contacts__address,
   .contacts__list {
     width: 472px;
     margin: 0 auto;
   }
 
-  .contacts__adress {
+  .contacts__address {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3884,7 +3861,7 @@ button,
     border: none;
   }
 
-  .contacts__adress h3 {
+  .contacts__address h3 {
     margin-top: 0;
     margin-bottom: 35px;
   }
@@ -4196,7 +4173,7 @@ button,
     right: -35px;
   }
 
-  .tab__item a {
+  .tab__link {
     margin-left: -35px;
   }
 
@@ -4453,7 +4430,7 @@ button,
     right: 15px;
   }
 
-  .contacts__adress,
+  .contacts__address,
   .contacts__box {
     padding: 63px 15px 68px;
     -webkit-box-align: start;
@@ -4462,7 +4439,7 @@ button,
   }
 
   .contacts__box h3,
-  .contacts__adress h3 {
+  .contacts__address h3 {
     font-size: 32px;
     line-height: 38px;
     letter-spacing: 0.03em;
@@ -4478,7 +4455,7 @@ button,
 
   .contacts__box h3,
   .contacts__form,
-  .contacts__adress,
+  .contacts__address,
   .contacts__list {
     width: 100%;
     margin: 0 auto;
@@ -4495,11 +4472,11 @@ button,
     display: none;
   }
 
-  .contacts__adress {
+  .contacts__address {
     padding-bottom: 39px;
   }
 
-  .contacts__adress h3 {
+  .contacts__address h3 {
     margin-bottom: 39px;
   }
 
