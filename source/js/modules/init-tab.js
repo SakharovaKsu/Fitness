@@ -2,11 +2,7 @@ const tab = document.querySelector('.tab');
 const tabsBtn = document.querySelectorAll('[data-tab-button]');
 const tabsContent = document.querySelectorAll('[data-tab-content]');
 
-export const initTabs = (e) => {
-  if (!tab) {
-    return;
-  }
-
+export const initTab = (e) => {
   tabsContent.forEach((container) => {
     container.classList.add('is-hidden');
   });
@@ -23,4 +19,6 @@ export const initTabs = (e) => {
   activeTab.classList.remove('is-hidden');
 };
 
-tabsBtn.forEach((button) => button.addEventListener('click', initTabs));
+if (tab) {
+  tabsBtn.forEach((button) => button.addEventListener('click', initTab));
+}

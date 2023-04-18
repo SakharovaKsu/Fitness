@@ -1,6 +1,6 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {Form} from './modules/form-validate/form';
-import './modules/init-tabs';
+import './modules/init-tab';
 import {initPlayer} from './modules/init-player';
 import {getSlider} from './modules/get-slider';
 import {scrollPage} from './modules/scroll-page';
