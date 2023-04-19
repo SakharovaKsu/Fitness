@@ -66,7 +66,7 @@
   font-size: 14px;
   line-height: 16px;
   border: 3px solid  $color-default-white;
-  padding: 15px;
+  padding: 17px;
   grid-column: 1/-1;
 
   @include hover-focus {
@@ -82,7 +82,7 @@
 
 .contacts__address {
   border-top: 1px solid $color-light-slate-grey;
-  padding-right: calc(100% - 580px);
+  padding-right: calc(100% - 592px);
   padding-left: 121px;
 }
 
@@ -104,7 +104,7 @@
     position: absolute;
     padding: 0;
     top: 6%;
-    left: 49%;
+    left: 49.5%;
     width: 1px;
     height: 78%;
     background-color: $color-light-slate-grey;
@@ -177,10 +177,14 @@
   }
 
   .contacts__box h3,
-  .contacts__form,
+  .contacts__form {
+    width: 478px;
+    margin: 0 auto;
+  }
+
   .contacts__address,
   .contacts__list {
-    width: 472px;
+    width: 500px;
     margin: 0 auto;
   }
 
@@ -195,21 +199,21 @@
 
   .contacts__address h3 {
     margin-top: 0;
-    margin-bottom: 35px;
+    margin-bottom: 37px;
   }
 
   .contacts__list {
     padding-left: 0;
-    column-gap: 97px;
-    margin-left: -14px;
+    column-gap: 125px;
 
     &::before {
       top: 3%;
-      left: 50%;
+      left: 53%;
     }
   }
 
   .contacts__item {
+    min-width: 240px;
     padding-bottom: 23px;
   }
 
@@ -222,6 +226,10 @@
   .contacts__item p {
     font-size: 18px;
     line-height: 152.34%;
+  }
+
+  .contacts__button {
+    font-size: 14px;
   }
 }
 

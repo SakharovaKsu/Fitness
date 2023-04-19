@@ -100,7 +100,7 @@
 
 @media (max-width: ($vp-1024 - 1px)) {
   .footer {
-    padding: 47px 0;
+    padding: 45px 0;
   }
 
   .footer__logo {
@@ -116,19 +116,13 @@
 
 @media (max-width: ($vp-768 - 1px)) {
   .footer {
-    padding: 46px 0;
+    padding-top: 28px;
+    padding-bottom: 54px;
   }
 
   .footer__container {
     position: relative;
     flex-wrap: wrap;
-  }
-
-  .footer__logo {
-    position: absolute;
-    top: 4px;
-    left: 15px;
-    width: 68px;
   }
 
   .footer__list {
@@ -137,7 +131,6 @@
     column-gap: 32px;
     width: 100%;
     margin-left: 0;
-    margin-bottom: 19px;
   }
 
   .footer__list li:first-child {
@@ -146,5 +139,12 @@
 
   .footer__item {
     margin-bottom: 16px;
+  }
+
+  .footer__logo {
+    position: absolute;
+    top: 22px;
+    left: 15px;
+    width: 68px;
   }
 }

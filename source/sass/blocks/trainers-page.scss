@@ -6,6 +6,16 @@
   position: relative;
 }
 
+.trainers-page__button-prev {
+  left: -57px;
+  right: auto;
+}
+
+.trainers-page__button-next {
+  right: -57px;
+  left: auto;
+}
+
 .trainers-page__container h2 {
   font-family: $ff-alumni-sans;
   font-size: 54px;
@@ -134,9 +144,27 @@
   color: $color-spindle;
 }
 
+@media (max-width: 1919px) {
+  .trainers-page__button-prev {
+    left: -60px;
+  }
+
+  .trainers-page__button-next {
+    right: -60px;
+  }
+}
+
 @media (max-width: ($vp-1440 - 1px)) {
   .trainers-page__container {
     padding: 0;
+  }
+
+  .trainers-page__button-prev {
+    left: -57px;
+  }
+
+  .trainers-page__button-next {
+    right: -57px;
   }
 }
 
@@ -147,6 +175,19 @@
 
   .trainers-page__img {
     height: 100%;
+  }
+
+  .trainers-page__button-prev {
+    left: 0;
+  }
+
+  .trainers-page__button-next {
+    right: 0;
+  }
+
+  .trainers-page__button-prev,
+  .trainers-page__button-next {
+    top: 59%;
   }
 }
 
@@ -160,17 +201,33 @@
     line-height: 50px;
     text-align: center;
     margin-left: -7px;
-    margin-bottom: 34px;
+    margin-bottom: 33px;
   }
 
   .trainers-page__img {
     height: 294px;
+  }
+
+  .trainers-page__button-prev {
+    left: 44px;
+  }
+
+  .trainers-page__button-next {
+    right: 44px;
   }
 }
 
 @media (max-width: ($vp-768 - 1px)) {
   .trainers-page__container {
     padding: 0 47px;
+  }
+
+  .trainers-page__button-prev {
+    left: 15px;
+  }
+
+  .trainers-page__button-next {
+    right: 15px;
   }
 
   .trainers-page__container h2 {

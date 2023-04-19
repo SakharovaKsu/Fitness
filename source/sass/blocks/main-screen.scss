@@ -72,9 +72,9 @@
 }
 
 .main-screen__button {
-  align-items: center;
   padding: 19px 55px;
   max-width: 250px;
+  text-align: center;
 
   @include hover-focus {
     background-color: $color-default-white;
@@ -153,13 +153,14 @@
 
   .main-screen__button {
     padding: 19px 30px;
+    width: 183px;
   }
 }
 
 @media (max-width: ($vp-768 - 1px)) {
   .main-screen {
     padding-top: 63px;
-    padding-bottom: 80px;
+    padding-bottom: 78px;
   }
 
   .main-screen__container {
@@ -188,7 +189,7 @@
   }
 
   .main-screen__text h1 {
-    max-width: 189px;
+    max-width: 100%;
   }
 
   .main-screen__list {
@@ -196,7 +197,13 @@
     padding-bottom: 32px;
   }
 
+  .main-screen__list li {
+    width: 113px;
+  }
+
   .main-screen__button {
+    max-width: 100%;
     width: 100%;
+    padding: 21px 30px;
   }
 }

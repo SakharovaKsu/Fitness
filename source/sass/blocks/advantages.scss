@@ -18,11 +18,11 @@
 .advantages__list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 74px 45px;
+  gap: 74px 0;
   grid-auto-flow: dense;
   align-items: start;
   justify-items: center;
-  padding: 0 64px;
+  padding: 0 71px;
   margin: 0;
 }
 
@@ -73,7 +73,7 @@
 }
 
 .advantages__figures {
-  padding-left: 11px;
+  padding-left: 5px;
 }
 
 .advantages__figures span:first-child {

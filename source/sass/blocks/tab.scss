@@ -160,7 +160,7 @@
   text-align: center;
   color: $color-chambray;
   margin: 0;
-  margin-bottom: 66px;
+  margin-bottom: 65px;
 }
 
 .tab__item span {
@@ -194,7 +194,7 @@
   text-align: center;
   color: $color-sapphire;
   border: 2px solid $color-sapphire;
-  padding: 24px 24px;
+  padding: 25px;
   width: 206px;
 
   @include hover-focus {
@@ -242,6 +242,10 @@
     padding-bottom: 44px;
   }
 
+  .tab__controls {
+    margin-left: 5px;
+  }
+
   .tab__list {
     gap: 38px;
     justify-content: space-evenly;
@@ -286,9 +290,17 @@
     padding-bottom: 33px;
   }
 
+  .tab__controls {
+    margin-left: 0;
+  }
+
   .tab__button {
     font-size: 16px;
     padding: 22px 23px 13px;
+  }
+
+  .tab__list {
+    gap: 40px;
   }
 
   .tab__item {

@@ -91,9 +91,13 @@
   margin: 0;
 }
 
+.stock__item .stock__button {
+  font-size: 12px;
+}
+
 .stock__button {
   font-weight: 700;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -141,7 +145,7 @@
   .stock__container h2 {
     font-size: 42px;
     line-height: 50px;
-    margin-bottom: 40px;
+    margin-bottom: 42px;
     margin-right: 8px;
   }
 
@@ -175,7 +179,7 @@
 @media (max-width: ($vp-768 - 1px)) {
   .stock {
     padding-top: 56px;
-    padding-bottom: 61px;
+    padding-bottom: 63px;
   }
 
   .stock__container h2 {
@@ -207,7 +211,7 @@
   }
 
   .stock__text p {
-    margin-bottom: 31px;
+    margin-bottom: 22px;
   }
 
   .stock__text a {

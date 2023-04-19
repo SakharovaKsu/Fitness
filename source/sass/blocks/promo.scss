@@ -117,13 +117,13 @@
 
 @media (max-width: ($vp-1024 - 1px)) {
   .promo {
-    padding-top: 100px;
+    padding-top: 101px;
     padding-bottom: 100px;
   }
 
   .promo__inner {
     max-width: 292px;
-    padding: 47px 46px;
+    padding: 48px 46px;
   }
 
   .promo__inner h2 {
@@ -168,13 +168,17 @@
     font-size: 24px;
   }
 
+  .promo__text span {
+    margin-left: -2px;
+  }
+
   .promo__text span,
   .promo__button {
     font-size: 10px;
   }
 
   .promo__button {
-    padding: 9px;
+    padding: 10px;
     border: 4px solid $color-default-white;
   }
 

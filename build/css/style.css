@@ -688,14 +688,7 @@ template {
   pointer-events: none;
 }
 
-.swiper-button-prev {
-  left: -57px;
-  right: auto;
-}
-
 .swiper-button-next {
-  right: -57px;
-  left: auto;
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
@@ -1746,11 +1739,9 @@ button,
 }
 
 .main-screen__button {
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   padding: 19px 55px;
   max-width: 250px;
+  text-align: center;
 }
 
 .main-screen__button:hover {
@@ -2125,7 +2116,7 @@ button,
   text-align: center;
   color: #495a7d;
   margin: 0;
-  margin-bottom: 66px;
+  margin-bottom: 65px;
 }
 
 .tab__item span {
@@ -2159,7 +2150,7 @@ button,
   text-align: center;
   color: #102654;
   border: 2px solid #102654;
-  padding: 24px 24px;
+  padding: 25px;
   width: 206px;
 }
 
@@ -2320,6 +2311,16 @@ button,
 
 .trainers-page__container {
   position: relative;
+}
+
+.trainers-page__button-prev {
+  left: -57px;
+  right: auto;
+}
+
+.trainers-page__button-next {
+  right: -57px;
+  left: auto;
 }
 
 .trainers-page__container h2 {
@@ -2491,13 +2492,13 @@ button,
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 74px 45px;
+  gap: 74px 0;
   grid-auto-flow: dense;
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: start;
   justify-items: center;
-  padding: 0 64px;
+  padding: 0 71px;
   margin: 0;
 }
 
@@ -2560,7 +2561,7 @@ button,
 }
 
 .advantages__figures {
-  padding-left: 11px;
+  padding-left: 5px;
 }
 
 .advantages__figures span:first-child {
@@ -2707,9 +2708,13 @@ button,
   margin: 0;
 }
 
+.stock__item .stock__button {
+  font-size: 12px;
+}
+
 .stock__button {
   font-weight: 700;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -2935,7 +2940,7 @@ button,
   font-size: 14px;
   line-height: 16px;
   border: 3px solid #ffffff;
-  padding: 15px;
+  padding: 17px;
   grid-column: 1/-1;
 }
 
@@ -2956,7 +2961,7 @@ button,
 
 .contacts__address {
   border-top: 1px solid #74819c;
-  padding-right: calc(100% - 580px);
+  padding-right: calc(100% - 592px);
   padding-left: 121px;
 }
 
@@ -2983,7 +2988,7 @@ button,
   position: absolute;
   padding: 0;
   top: 6%;
-  left: 49%;
+  left: 49.5%;
   width: 1px;
   height: 78%;
   background-color: #74819c;
@@ -3185,28 +3190,20 @@ button,
 }
 
 @media (max-width: 1919px) {
-  .swiper-button-prev {
+  .container--reviews {
+    padding: 0 50px;
+  }
+
+  .trainers-page__button-prev {
     left: -60px;
   }
 
-  .swiper-button-next {
+  .trainers-page__button-next {
     right: -60px;
-  }
-
-  .container--reviews {
-    padding: 0 50px;
   }
 }
 
 @media (max-width: 1439px) {
-  .swiper-button-prev {
-    left: -57px;
-  }
-
-  .swiper-button-next {
-    right: -57px;
-  }
-
   .container {
     max-width: 1160px;
     margin: 0 auto;
@@ -3270,22 +3267,17 @@ button,
   .trainers-page__container {
     padding: 0;
   }
+
+  .trainers-page__button-prev {
+    left: -57px;
+  }
+
+  .trainers-page__button-next {
+    right: -57px;
+  }
 }
 
 @media (max-width: 1279px) {
-  .swiper-button-prev {
-    left: 0;
-  }
-
-  .swiper-button-next {
-    right: 0;
-  }
-
-  .swiper-button-prev,
-  .swiper-button-next {
-    top: 59%;
-  }
-
   .container {
     max-width: 976px;
     margin: 0 auto;
@@ -3316,6 +3308,19 @@ button,
     height: 100%;
   }
 
+  .trainers-page__button-prev {
+    left: 0;
+  }
+
+  .trainers-page__button-next {
+    right: 0;
+  }
+
+  .trainers-page__button-prev,
+  .trainers-page__button-next {
+    top: 59%;
+  }
+
   .contacts__box,
   .contacts__address {
     display: -ms-grid;
@@ -3333,7 +3338,6 @@ button,
   .swiper-button-next {
     width: 16px;
     height: 32px;
-    top: 214px;
   }
 
   .swiper-button-prev:hover,
@@ -3344,14 +3348,6 @@ button,
   .swiper-button-next:active {
     width: 18px;
     height: 34px;
-  }
-
-  .swiper-button-prev {
-    left: 44px;
-  }
-
-  .swiper-button-next {
-    right: 44px;
   }
 
   .container {
@@ -3440,6 +3436,7 @@ button,
 
   .main-screen__button {
     padding: 19px 30px;
+    width: 183px;
   }
 
   .description {
@@ -3569,6 +3566,10 @@ button,
     padding-bottom: 44px;
   }
 
+  .tab__controls {
+    margin-left: 5px;
+  }
+
   .tab__list {
     gap: 38px;
     -webkit-box-pack: space-evenly;
@@ -3597,13 +3598,13 @@ button,
   }
 
   .promo {
-    padding-top: 100px;
+    padding-top: 101px;
     padding-bottom: 100px;
   }
 
   .promo__inner {
     max-width: 292px;
-    padding: 47px 46px;
+    padding: 48px 46px;
   }
 
   .promo__inner h2 {
@@ -3648,13 +3649,17 @@ button,
     font-size: 24px;
   }
 
+  .promo__text span {
+    margin-left: -2px;
+  }
+
   .promo__text span,
   .promo__button {
     font-size: 10px;
   }
 
   .promo__button {
-    padding: 9px;
+    padding: 10px;
     border: 4px solid #ffffff;
   }
 
@@ -3671,11 +3676,19 @@ button,
     line-height: 50px;
     text-align: center;
     margin-left: -7px;
-    margin-bottom: 34px;
+    margin-bottom: 33px;
   }
 
   .trainers-page__img {
     height: 294px;
+  }
+
+  .trainers-page__button-prev {
+    left: 44px;
+  }
+
+  .trainers-page__button-next {
+    right: 44px;
   }
 
   .advantages {
@@ -3753,7 +3766,7 @@ button,
   .stock__container h2 {
     font-size: 42px;
     line-height: 50px;
-    margin-bottom: 40px;
+    margin-bottom: 42px;
     margin-right: 8px;
   }
 
@@ -3844,10 +3857,14 @@ button,
   }
 
   .contacts__box h3,
-  .contacts__form,
+  .contacts__form {
+    width: 478px;
+    margin: 0 auto;
+  }
+
   .contacts__address,
   .contacts__list {
-    width: 472px;
+    width: 500px;
     margin: 0 auto;
   }
 
@@ -3869,23 +3886,23 @@ button,
 
   .contacts__address h3 {
     margin-top: 0;
-    margin-bottom: 35px;
+    margin-bottom: 37px;
   }
 
   .contacts__list {
     padding-left: 0;
-    -webkit-column-gap: 97px;
-    -moz-column-gap: 97px;
-    column-gap: 97px;
-    margin-left: -14px;
+    -webkit-column-gap: 125px;
+    -moz-column-gap: 125px;
+    column-gap: 125px;
   }
 
   .contacts__list::before {
     top: 3%;
-    left: 50%;
+    left: 53%;
   }
 
   .contacts__item {
+    min-width: 240px;
     padding-bottom: 23px;
   }
 
@@ -3900,8 +3917,12 @@ button,
     line-height: 152.34%;
   }
 
+  .contacts__button {
+    font-size: 14px;
+  }
+
   .footer {
-    padding: 47px 0;
+    padding: 45px 0;
   }
 
   .footer__logo {
@@ -3966,14 +3987,6 @@ button,
     height: 21px;
   }
 
-  .swiper-button-prev {
-    left: 15px;
-  }
-
-  .swiper-button-next {
-    right: 15px;
-  }
-
   .container {
     padding: 0 15px;
   }
@@ -4002,7 +4015,7 @@ button,
 
   .main-screen {
     padding-top: 63px;
-    padding-bottom: 80px;
+    padding-bottom: 78px;
   }
 
   .main-screen__container {
@@ -4037,7 +4050,7 @@ button,
   }
 
   .main-screen__text h1 {
-    max-width: 189px;
+    max-width: 100%;
   }
 
   .main-screen__list {
@@ -4045,8 +4058,14 @@ button,
     padding-bottom: 32px;
   }
 
+  .main-screen__list li {
+    width: 113px;
+  }
+
   .main-screen__button {
+    max-width: 100%;
     width: 100%;
+    padding: 21px 30px;
   }
 
   .description {
@@ -4138,9 +4157,17 @@ button,
     padding-bottom: 33px;
   }
 
+  .tab__controls {
+    margin-left: 0;
+  }
+
   .tab__button {
     font-size: 16px;
     padding: 22px 23px 13px;
+  }
+
+  .tab__list {
+    gap: 40px;
   }
 
   .tab__item {
@@ -4211,6 +4238,14 @@ button,
 
   .trainers-page__container {
     padding: 0 47px;
+  }
+
+  .trainers-page__button-prev {
+    left: 15px;
+  }
+
+  .trainers-page__button-next {
+    right: 15px;
   }
 
   .trainers-page__container h2 {
@@ -4304,7 +4339,7 @@ button,
 
   .stock {
     padding-top: 56px;
-    padding-bottom: 61px;
+    padding-bottom: 63px;
   }
 
   .stock__container h2 {
@@ -4337,7 +4372,7 @@ button,
   }
 
   .stock__text p {
-    margin-bottom: 31px;
+    margin-bottom: 22px;
   }
 
   .stock__text a {
@@ -4491,20 +4526,14 @@ button,
   }
 
   .footer {
-    padding: 46px 0;
+    padding-top: 28px;
+    padding-bottom: 54px;
   }
 
   .footer__container {
     position: relative;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-  }
-
-  .footer__logo {
-    position: absolute;
-    top: 4px;
-    left: 15px;
-    width: 68px;
   }
 
   .footer__list {
@@ -4517,7 +4546,6 @@ button,
     column-gap: 32px;
     width: 100%;
     margin-left: 0;
-    margin-bottom: 19px;
   }
 
   .footer__list li:first-child {
@@ -4526,6 +4554,13 @@ button,
 
   .footer__item {
     margin-bottom: 16px;
+  }
+
+  .footer__logo {
+    position: absolute;
+    top: 22px;
+    left: 15px;
+    width: 68px;
   }
 }
 
