@@ -2511,8 +2511,8 @@ button,
   gap: 10px 29px;
 }
 
-.advantages__item:nth-child(-4n+4),
-.advantages__item:nth-child(-5n+5) {
+.advantages__item:nth-child(-4n+9),
+.advantages__item:nth-child(1n+4) {
   padding-top: 78px;
   border-top: 2px solid rgba(209, 10, 66, 0.2);
 }
