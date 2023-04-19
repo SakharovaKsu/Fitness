@@ -6,9 +6,10 @@
 .footer__container {
   display: flex;
   justify-content: space-between;
+  gap: 20px;
 }
 
-.footer__logo {
+.footer__container a {
   fill: $color-default-white;
 
   @include hover-focus {
@@ -29,7 +30,8 @@
 
 .footer__list {
   display: flex;
-  gap: 40px;
+  gap: 20px 40px;
+  flex-wrap: wrap;
   margin-top: -2px;
   margin-left: 9px;
 }
@@ -69,6 +71,21 @@
   height: 25px;
   border-radius: 50%;
   background-color: $color-default-white;
+
+  @include hover-focus {
+    background-color: $color-light-slate-grey;
+    outline: none;
+  }
+
+  @include active {
+    background-color: $color-chambray;
+  }
+}
+
+.footer__point .footer__icon {
+  @include active {
+    fill: $color-default-white;
+  }
 }
 
 .footer__point a {
@@ -79,15 +96,6 @@
 
 .footer__icon {
   fill: $color-black-russian;
-
-  @include hover-focus {
-    fill: $color-neon-blue;
-    outline: none;
-  }
-
-  @include active {
-    fill: $color-torch-red;
-  }
 }
 
 @media (max-width: ($vp-1024 - 1px)) {

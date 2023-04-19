@@ -30,8 +30,7 @@
       min-height: 48px;
       margin-left: auto;
       padding: 10px;
-      border: 2px solid rgba($color-sapphire, 0.2);
-      border-radius: 5px;
+      border: 1px solid rgba($color-sapphire, 0.2);
       outline: none;
       transition: border 0.3s ease;
 
@@ -41,11 +40,11 @@
       }
 
       &:hover {
-        border: 2px solid rgba($color-sapphire, 0.5);
+        border: 1px solid rgba($color-sapphire, 0.5);
       }
 
       &:focus {
-        border: 2px solid rgba($color-sapphire, 0.8);
+        border: 1px solid rgba($color-sapphire, 0.8);
       }
     }
   }
@@ -72,22 +71,22 @@
   &.is-invalid {
     input,
     textarea {
-      border: 2px solid $color-torch-red-two;
+      border-bottom: 1px solid $color-torch-red-two;
 
       &:focus,
       &:hover {
-        border: 2px solid rgba($color-torch-red-two, 0.5);
+        border: 1px solid rgba($color-torch-red-two, 0.5);
       }
     }
   }
 
   &.is-valid {
     input {
-      border: 2px solid $color-green;
+      border-bottom: 1px solid $color-green;
 
       &:focus,
       &:hover {
-        border: 2px solid rgba($color-green, 0.5);
+        border: 1px solid rgba($color-green, 0.5);
       }
     }
   }

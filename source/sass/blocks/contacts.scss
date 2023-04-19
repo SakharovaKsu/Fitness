@@ -133,6 +133,14 @@
 
 .contacts__item a {
   display: block;
+
+  @include hover-focus {
+    color: $color-egyptian-blue;
+  }
+
+  @include active {
+    color: $color-torch-red;
+  }
 }
 
 @media (max-width: ($vp-1280 - 1px)) {

@@ -74,6 +74,7 @@
 .main-screen__button {
   align-items: center;
   padding: 19px 55px;
+  max-width: 250px;
 
   @include hover-focus {
     background-color: $color-default-white;

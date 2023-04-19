@@ -1,10 +1,10 @@
 .description {
-  position: relative;
   padding-top: 120px;
   padding-bottom: 235px;
 }
 
 .description__container {
+  position: relative;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
@@ -19,8 +19,8 @@
 
 .description__video {
   position: absolute;
-  top: 408px;
-  left: 39.5%;
+  top: 236px;
+  left: 480px;
   z-index: 1;
 }
 
@@ -76,10 +76,8 @@
   }
 
   .description__video {
-    // width: 364px;
-    // height: 228px;
-    top: 408px;
-    left: 53%;
+    top: 288px;
+    left: 53.5%;
     transform: translateX(-50%);
   }
 
@@ -90,7 +88,7 @@
 
 @media (max-width: ($vp-1280 - 1px)) {
   .description__video {
-    top: 478px;
+    left: 61.5%;
   }
 }
 

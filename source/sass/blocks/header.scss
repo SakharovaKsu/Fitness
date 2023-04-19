@@ -11,16 +11,6 @@
   fill: $color-default-white;
 }
 
-.header__container .header__logo {
-  @include hover-focus {
-    opacity: 0.3;
-  }
-
-  @include active {
-    opacity: 0.6;
-  }
-}
-
 .header__container a {
   font-family: $ff-alumni-sans;
   color: $color-default-white;
@@ -29,12 +19,12 @@
   letter-spacing: 0.03em;
 
   @include hover-focus {
-    color: $color-midnight-express;
     outline: none;
+    opacity: 0.4;
   }
 
   @include active {
-    opacity: 0.6;
+    opacity: 0.7;
   }
 }
 
