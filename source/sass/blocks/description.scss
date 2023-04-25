@@ -65,6 +65,7 @@
   line-height: 150%;
   margin: 0;
   padding-bottom: 7px;
+  max-width: 355px;
 }
 
 @media (max-width: ($vp-1440 - 1px)) {
@@ -151,6 +152,7 @@
 
   .description p {
     padding-bottom: 45px;
+    max-width: 502px;
   }
 }
 

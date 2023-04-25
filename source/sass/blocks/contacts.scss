@@ -56,10 +56,13 @@
   background-color: transparent;
   border: none;
   border-bottom: 1px solid $color-light-slate-grey;
-  color: inherit;
   font-size: 14px;
   line-height: 16px;
   width: 100%;
+}
+
+.contacts__field input::placeholder {
+  color: $color-default-white;
 }
 
 .contacts__button {
@@ -92,8 +95,9 @@
 }
 
 .contacts__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   position: relative;
-  column-count: 2;
   column-gap: 111px;
   padding: 0;
   padding-left: 3px;
@@ -117,13 +121,13 @@
   padding-bottom: 17px;
 }
 
-.contacts__item h4 {
+.contacts__item dt {
   font-weight: 700;
   margin: 0;
   padding-bottom: 4px;
 }
 
-.contacts__item p,
+.contacts__item dd,
 .contacts__item a {
   font-weight: 400;
   font-size: 14px;
@@ -217,13 +221,13 @@
     padding-bottom: 23px;
   }
 
-  .contacts__item h4 {
+  .contacts__item dt {
     font-size: 20px;
     padding-bottom: 8px;
   }
 
   .contacts__item a,
-  .contacts__item p {
+  .contacts__item dd {
     font-size: 18px;
     line-height: 152.34%;
   }
@@ -264,7 +268,7 @@
 
   .contacts__list {
     margin-left: 0;
-    column-count: 1;
+    grid-template-columns: 1fr;
 
     &::before {
       display: none;

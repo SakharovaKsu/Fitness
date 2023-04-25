@@ -135,6 +135,7 @@
   height: 100%;
   min-height: 462px;
   background-color: $color-persian-blue;
+  object-fit: cover;
 }
 
 @media (max-width: ($vp-1024 - 1px)) {

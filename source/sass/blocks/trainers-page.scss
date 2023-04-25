@@ -1,5 +1,5 @@
 .trainers-page {
-  padding-bottom: 90px;
+  padding-bottom: 121px;
 }
 
 .trainers-page__container {
@@ -34,7 +34,6 @@
   position: relative;
   list-style-type: none;
   margin: 0;
-  height: 294px;
   width: 260px;
 
   &:hover .trainers-page__box,
@@ -44,13 +43,14 @@
     flex-direction: column;
     background-color: $color-sapphire-translucent-min;
     overflow: scroll;
+    padding-bottom: 9%;
   }
 
   &:hover .trainers-page__box h3,
   &:focus-visible .trainers-page__box h3 {
     margin: 0;
     padding: 0;
-    padding-top: 53px;
+    padding-top: 20%;
   }
 
   &:hover .trainers-page__inner,
@@ -84,7 +84,6 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: auto;
   object-fit: cover;
   z-index: 0;
   background-color: $color-sapphire-translucent;
@@ -96,14 +95,14 @@
   justify-content: center;
   z-index: 1;
   width: 100%;
-  height: 294px;
 }
 
 .trainers-page__box h3 {
   font-size: 18px;
-  margin: auto 0 0;
   color: $color-default-white;
-  padding-bottom: 25px;
+  padding-top: 94%;
+  padding-bottom: 9%;
+  margin: 0;
 }
 
 .trainers-page__text {
@@ -173,8 +172,9 @@
     padding: 0 70px;
   }
 
-  .trainers-page__img {
-    height: 100%;
+  .trainers-page__item:focus-visible .trainers-page__box, .trainers-page__item:hover .trainers-page__box {
+    padding-bottom: 0;
+    height: 202px;
   }
 
   .trainers-page__button-prev {
@@ -204,16 +204,20 @@
     margin-bottom: 33px;
   }
 
-  .trainers-page__img {
-    height: 294px;
-  }
-
   .trainers-page__button-prev {
     left: 44px;
   }
 
   .trainers-page__button-next {
     right: 44px;
+  }
+
+  .trainers-page__box {
+    height: 100%;
+  }
+
+  .trainers-page__item:focus-visible .trainers-page__box, .trainers-page__item:hover .trainers-page__box {
+    height: 100%;
   }
 }
 

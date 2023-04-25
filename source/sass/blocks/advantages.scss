@@ -1,8 +1,7 @@
 .advantages {
-  padding-top: 146px;
+  padding-top: 98px;
   padding-bottom: 140px;
   background-color: $color-ghost-white;
-  margin-left: 10px;
 }
 
 .advantages__container h2 {
@@ -18,7 +17,7 @@
 .advantages__list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 74px 0;
+  gap: 34px 0;
   grid-auto-flow: dense;
   align-items: start;
   justify-items: center;
@@ -82,10 +81,11 @@
   font-weight: 700;
   font-size: 71px;
   overflow-wrap: normal;
-  background-image: $gradient-bg-text;
   background-clip: text;
   padding-top: 16px;
   padding-bottom: 15px;
+  -webkit-text-fill-color: transparent;
+  background-image: $gradient-bg-text;
 }
 
 .advantages__figures span:last-child {

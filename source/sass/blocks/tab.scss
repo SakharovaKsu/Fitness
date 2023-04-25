@@ -61,6 +61,7 @@
   line-height: 150%;
   background-color: transparent;
   color: $color-sapphire-translucent;
+  cursor: pointer;
 
   &:last-child {
     padding-right: 0;
@@ -211,9 +212,7 @@
 
 @media (max-width: ($vp-1280 - 1px)) {
   .tab__list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
+    grid-template-columns: 1fr;
   }
 }
 
@@ -224,12 +223,17 @@
 
     &::before {
       bottom: -100px;
-      right: -8px;
-      width: 354px;
+      right: 1px;
+      width: 348px;
       background-size: 348px auto;
 
       @include graphic-retina("background-picture-tablet");
     }
+  }
+
+  .tab__list {
+    gap: 38px;
+    grid-template-columns: 442px;
   }
 
   .tab__container h2 {
@@ -244,11 +248,6 @@
 
   .tab__controls {
     margin-left: 5px;
-  }
-
-  .tab__list {
-    gap: 38px;
-    justify-content: space-evenly;
   }
 
   .tab__item {
@@ -300,7 +299,7 @@
   }
 
   .tab__list {
-    gap: 40px;
+    grid-template-columns: 1fr;
   }
 
   .tab__item {
