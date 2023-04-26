@@ -52,7 +52,7 @@
 }
 
 .contacts__field input {
-  padding: 8px 0;
+  padding: 11px 0 5px 2px;
   background-color: transparent;
   border: none;
   border-bottom: 1px solid $color-light-slate-grey;
@@ -118,7 +118,6 @@
 .contacts__item {
   list-style-type: none;
   margin: 0;
-  padding-bottom: 17px;
 }
 
 .contacts__item dt {
@@ -133,6 +132,10 @@
   font-size: 14px;
   line-height: 21px;
   margin: 0;
+}
+
+.contacts__item dd {
+  padding-bottom: 18px;
 }
 
 .contacts__item a {
@@ -166,7 +169,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 62px 156px 69px 129px;
+    padding: 60px 156px 69px 129px;
   }
 
   .contacts__address h3,
@@ -197,7 +200,7 @@
     flex-direction: column;
     align-items: flex-start;
     padding-top: 61px;
-    padding-bottom: 40px;
+    padding-bottom: 16px;
     border: none;
   }
 
@@ -208,7 +211,7 @@
 
   .contacts__list {
     padding-left: 0;
-    column-gap: 125px;
+    column-gap: 74px;
 
     &::before {
       top: 3%;
@@ -232,6 +235,10 @@
     line-height: 152.34%;
   }
 
+  .contacts__item dd {
+    padding-bottom: 23px;
+  }
+
   .contacts__button {
     font-size: 14px;
   }
@@ -240,7 +247,7 @@
 @media (max-width: ($vp-768 - 1px)) {
   .contacts__address,
   .contacts__box {
-    padding: 63px 15px 68px;
+    padding: 63px 15px 71px;
     align-items: flex-start;
   }
 
@@ -256,6 +263,7 @@
     width: 100%;
     grid-template-columns: 1fr;
     padding-top: 29px;
+    gap: 29px;
   }
 
   .contacts__box h3,
@@ -281,6 +289,10 @@
 
   .contacts__address h3 {
     margin-bottom: 39px;
+  }
+
+  .contacts__item {
+    padding-bottom: 0;
   }
 
   .contacts__button {

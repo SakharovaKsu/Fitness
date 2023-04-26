@@ -1,5 +1,5 @@
 .trainers-page {
-  padding-bottom: 121px;
+  padding-bottom: 143px;
 }
 
 .trainers-page__container {
@@ -192,6 +192,10 @@
 }
 
 @media (max-width: ($vp-1024 - 1px)) {
+  .trainers-page {
+    padding-bottom: 102px;
+  }
+
   .trainers-page__container {
     padding: 0 100px;
   }
@@ -212,8 +216,17 @@
     right: 44px;
   }
 
+  .trainers-page__button-next,
+  .trainers-page__button-prev {
+    top: 57%;
+  }
+
   .trainers-page__box {
     height: 100%;
+  }
+
+  .trainers-page__box h3 {
+    padding-top: 91%;
   }
 
   .trainers-page__item:focus-visible .trainers-page__box, .trainers-page__item:hover .trainers-page__box {
@@ -222,6 +235,10 @@
 }
 
 @media (max-width: ($vp-768 - 1px)) {
+  .trainers-page {
+    padding-bottom: 71px;
+  }
+
   .trainers-page__container {
     padding: 0 47px;
   }
