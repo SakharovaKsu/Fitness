@@ -96,8 +96,7 @@
   justify-content: center;
   z-index: 1;
   width: 100%;
-  padding-top: 54px;
-  padding-bottom: 26px;
+  padding: 54px 42px 24px 42px;
   min-height: 100%;
   align-items: flex-end;
 }
@@ -109,7 +108,7 @@
 }
 
 .trainers-page__text {
-  padding: 0 42px;
+  padding: 0;
   margin: 31px 0 0;
 }
 
@@ -171,7 +170,7 @@
 
 @media (max-width: ($vp-1280 - 1px)) {
   .trainers-page__container {
-    padding: 0 70px;
+    padding: 0 10px;
   }
 
   .trainers-page__item:focus-visible .trainers-page__box, .trainers-page__item:hover .trainers-page__box {
@@ -179,11 +178,11 @@
   }
 
   .trainers-page__button-prev {
-    left: 0;
+    left: -20px;
   }
 
   .trainers-page__button-next {
-    right: 0;
+    right: -20px;
   }
 
   .trainers-page__button-prev,
