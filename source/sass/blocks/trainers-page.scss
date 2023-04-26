@@ -35,6 +35,7 @@
   list-style-type: none;
   margin: 0;
   width: 260px;
+  min-height: 294px;
 
   &:hover .trainers-page__box,
   &:focus-visible .trainers-page__box {
@@ -43,14 +44,13 @@
     flex-direction: column;
     background-color: $color-sapphire-translucent-min;
     overflow: scroll;
-    padding-bottom: 9%;
+    min-height: 100%;
   }
 
   &:hover .trainers-page__box h3,
   &:focus-visible .trainers-page__box h3 {
     margin: 0;
     padding: 0;
-    padding-top: 20%;
   }
 
   &:hover .trainers-page__inner,
@@ -84,6 +84,7 @@
   top: 0;
   left: 0;
   width: 100%;
+  height: 100%;
   object-fit: cover;
   z-index: 0;
   background-color: $color-sapphire-translucent;
@@ -95,19 +96,20 @@
   justify-content: center;
   z-index: 1;
   width: 100%;
+  padding-top: 54px;
+  padding-bottom: 26px;
+  min-height: 100%;
+  align-items: flex-end;
 }
 
 .trainers-page__box h3 {
   font-size: 18px;
   color: $color-default-white;
-  padding-top: 94%;
-  padding-bottom: 9%;
   margin: 0;
 }
 
 .trainers-page__text {
-  padding: 0;
-  max-width: 175px;
+  padding: 0 42px;
   margin: 31px 0 0;
 }
 
@@ -174,7 +176,6 @@
 
   .trainers-page__item:focus-visible .trainers-page__box, .trainers-page__item:hover .trainers-page__box {
     padding-bottom: 0;
-    height: 202px;
   }
 
   .trainers-page__button-prev {

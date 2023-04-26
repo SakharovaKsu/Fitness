@@ -6,7 +6,9 @@
 .video__control {
   position: absolute;
   top: 70px;
-  left: 0;
+  width: 364px;
+  height: 228px;
+  left: -15px;
 }
 
 .video__player {
@@ -15,9 +17,6 @@
 
 .video__control {
   display: flex;
-  width: 364px;
-  height: 228px;
-  left: -15px;
 
   @include graphic-retina ("gym-video");
   background-size: cover;
@@ -69,21 +68,21 @@
   .video__player,
   .video__control {
     top: 0;
-  }
-
-  .video__control {
     left: -185px;
   }
 }
 
 @media (max-width: ($vp-1024 - 1px)) {
-  .video__control {
+  .video__control,
+  .video__player {
+    width: 268px;
+    height: 167px;
     left: 0;
     right: 0;
     margin: auto;
-    width: 268px;
-    height: 167px;
+  }
 
+  .video__control {
     @include graphic-retina ("gym-video");
 
     &::before {
@@ -107,5 +106,10 @@
 
     @include graphic-retina ("gym-video-mobile");
     background-size: 100% auto;
+  }
+
+  .video__player {
+    width: 100vw;
+    height: auto;
   }
 }

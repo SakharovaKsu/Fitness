@@ -33,6 +33,7 @@ const getSlider = () => {
       loop: false,
       slidesPerView: 1,
       spaceBetween: 40,
+      setWrapperSize: true,
 
       navigation: {
         nextEl: '.reviews__button--next ',
