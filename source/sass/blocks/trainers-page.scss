@@ -239,6 +239,10 @@
     padding-bottom: 71px;
   }
 
+  .trainers-page__box {
+    padding: 44px 22px 24px;
+  }
+
   .trainers-page__container {
     padding: 0 47px;
   }
@@ -260,12 +264,8 @@
   .trainers-page__item {
     min-width: 226px;
     max-width: 100%;
+    min-height: 274px;
     height: 85.5vw;
-  }
-
-  .trainers-page__item:focus-visible .trainers-page__box h3,
-  .trainers-page__item:hover .trainers-page__box h3 {
-    padding-top: 44px;
   }
 
   .trainers-page__box {
