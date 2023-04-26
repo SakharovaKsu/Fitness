@@ -2426,8 +2426,7 @@ button,
   justify-content: center;
   z-index: 1;
   width: 100%;
-  padding-top: 54px;
-  padding-bottom: 26px;
+  padding: 54px 42px 24px 42px;
   min-height: 100%;
   -webkit-box-align: end;
   -ms-flex-align: end;
@@ -2441,7 +2440,7 @@ button,
 }
 
 .trainers-page__text {
-  padding: 0 42px;
+  padding: 0;
   margin: 31px 0 0;
 }
 
@@ -2812,6 +2811,7 @@ button,
   background-color: #1c3374;
   color: #ffffff;
   width: 560px;
+  height: 100%;
   padding: 57px 61px;
 }
 
@@ -3328,7 +3328,7 @@ button,
   }
 
   .trainers-page__container {
-    padding: 0 70px;
+    padding: 0 10px;
   }
 
   .trainers-page__item:focus-visible .trainers-page__box,
@@ -3337,11 +3337,11 @@ button,
   }
 
   .trainers-page__button-prev {
-    left: 0;
+    left: -20px;
   }
 
   .trainers-page__button-next {
-    right: 0;
+    right: -20px;
   }
 
   .trainers-page__button-prev,
